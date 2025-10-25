@@ -9,8 +9,41 @@ import type {
   VolunteerProfile,
 } from "../types/models";
 
+type SyncStudentsResponse = {
+  zone: string;
+  added?: StudentProfile[];
+  added_students?: StudentProfile[];
+  touched_families?: string[];
+  explanation: string;
+  [key: string]: unknown;
+};
+
+type AssignmentSummary = {
+  volunteer_id: string;
+  zone: string;
+  assigned: number;
+  capacity: number;
+};
+
+type RunAssignmentResponse = {
+  assigned: Array<{
+    student_id: string;
+    volunteer_id: string;
+    distance_km?: number;
+  }>;
+  unassigned: Array<{ student_id: string; reason: string }>;
+  summary?: AssignmentSummary[];
+  explanation: string;
+};
+
+const envBaseUrl = import.meta.env.VITE_API_BASE;
+const baseURL =
+  typeof envBaseUrl === "string" && envBaseUrl.trim().length > 0
+    ? envBaseUrl
+    : "http://localhost:8000";
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE ?? "http://localhost:8000",
+  baseURL,
   headers: {
     "Content-Type": "application/json",
   },
@@ -18,85 +51,91 @@ const api = axios.create({
 
 api.interceptors.response.use(
   (response) => response,
-  (error) => {
-    if (error.response?.data?.detail) {
-      console.error("API error detail:", error.response.data.detail);
+  (error: unknown) => {
+    if (axios.isAxiosError(error)) {
+      const detail =
+        (error.response?.data as { detail?: unknown } | undefined)?.detail;
+      if (detail) {
+        console.error("Detalhe da API:", detail);
+      }
+      return Promise.reject(error);
     }
-    return Promise.reject(error);
+    const fallbackError =
+      error instanceof Error
+        ? error
+        : new Error("Falha inesperada ao se comunicar com a API.");
+    return Promise.reject(fallbackError);
   },
 );
 
-export type PaginatedResponse<T> = {
-  [key: string]: T[];
-  explanation?: string;
-};
-
 export const fetchVolunteers = async (zone: string) => {
-  const { data } = await api.get<{ volunteers: VolunteerProfile[] }>(
+  const response = await api.get<{ volunteers: VolunteerProfile[] }>(
     `/volunteers`,
     {
       params: { zone },
     },
   );
-  return data.volunteers;
+  return response.data.volunteers;
 };
 
 export const fetchStudents = async (zone: string) => {
-  const { data } = await api.get<{ students: StudentProfile[] }>(`/students`, {
+  const response = await api.get<{ students: StudentProfile[] }>(`/students`, {
     params: { zone },
   });
-  return data.students;
+  return response.data.students;
 };
 
 export const fetchAssignments = async (zone: string) => {
-  const { data } = await api.get<{ assignments: AssignmentRecord[] }>(
+  const response = await api.get<{ assignments: AssignmentRecord[] }>(
     `/assignments`,
     {
       params: { zone },
     },
   );
-  return data.assignments;
+  return response.data.assignments;
 };
 
 export const syncStudents = async (zone: string) => {
-  const { data } = await api.get(`/sync/students`, { params: { zone } });
-  return data;
+  const response = await api.get<SyncStudentsResponse>(`/sync/students`, {
+    params: { zone },
+  });
+  return response.data;
 };
 
 export const runAssignment = async (zone?: string) => {
-  const { data } = await api.post(`/assign`, zone ? { zone } : {});
-  return data as {
-    assigned: Array<{ student_id: string; volunteer_id: string }>;
-    unassigned: Array<{ student_id: string; reason: string }>;
-  };
+  const response = await api.post<RunAssignmentResponse>(
+    `/assign`,
+    zone ? { zone } : {},
+  );
+  return response.data;
 };
 
 export const fetchFamily = async (familyId: string) => {
-  const { data } = await api.get<{ family: FamilyProfile }>(
+  const response = await api.get<{ family: FamilyProfile }>(
     `/family/${familyId}`,
   );
-  return data.family;
+  return response.data.family;
 };
 
 export const fetchStudentNetwork = async (studentId: string) => {
-  const { data } = await api.get<NetworkResponse>(
+  const response = await api.get<NetworkResponse>(
     `/network/student/${studentId}`,
   );
-  return data;
+  return response.data;
 };
 
 export const generateStudentInsight = async (studentId: string) => {
-  const { data } = await api.post<InsightResponse>(`/insights/student`, {
+  const response = await api.post<InsightResponse>(`/insights/student`, {
     student_id: studentId,
   });
-  return data;
+  return response.data;
 };
 
 export const generateFamilyInsight = async (familyId: string) => {
-  const { data } = await api.post<InsightResponse>(`/insights/family`, {
+  const response = await api.post<InsightResponse>(`/insights/family`, {
     family_id: familyId,
   });
-  return data;
+  return response.data;
 };
 
 export default api;

@@ -169,7 +169,7 @@ const StudentDetails = () => {
             {familyQuery.data && (
               <button
                 type="button"
-                onClick={() => familyInsightMutation.mutate(familyQuery.data!.id)}
+                onClick={() => familyInsightMutation.mutate(familyQuery.data.id)}
                 className="rounded-full bg-warning-500 px-4 py-2 font-semibold text-neutral-900 hover:bg-warning-500/90"
               >
                 Gerar insight da família

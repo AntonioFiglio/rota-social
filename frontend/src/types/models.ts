@@ -149,6 +149,6 @@ export type InsightResponse = {
   family_id?: string;
   insight: string;
   source: "openai" | "mock" | "fallback";
-  model?: string | "none";
+  model?: string;
   generated_at?: string;
 };

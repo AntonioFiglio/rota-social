@@ -69,9 +69,15 @@ const MapView = ({
   const [visibleRadius, setVisibleRadius] = useState(showRadius);
   const [visibleLines, setVisibleLines] = useState(drawDistanceLines);
 
-  const volunteerPosition: LatLngExpression | undefined = volunteer.coordinates
-    ? [volunteer.coordinates.latitude, volunteer.coordinates.longitude]
-    : undefined;
+  const volunteerCoords = volunteer.coordinates;
+
+  const volunteerPosition = useMemo<LatLngExpression | undefined>(() => {
+    if (!volunteerCoords) return undefined;
+    return [
+      volunteerCoords.latitude,
+      volunteerCoords.longitude,
+    ];
+  }, [volunteerCoords]);
 
   const suggestedMarkers = useMemo(
     () =>

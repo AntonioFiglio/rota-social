@@ -13223,7 +13223,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10286",
@@ -13231,9 +13231,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002572"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10287",
@@ -13243,7 +13243,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10288",
@@ -13251,11 +13251,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10289",
@@ -13355,7 +13354,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10298",
@@ -13365,17 +13364,17 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10299",
       "family_id": "F2575",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1030",
@@ -13394,7 +13393,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10301",
@@ -13485,7 +13484,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1031",
@@ -13503,19 +13502,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002578"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10311",
       "family_id": "F2578",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10312",
@@ -13523,10 +13522,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10313",
@@ -13628,17 +13628,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10322",
       "family_id": "F2581",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10323",
@@ -13648,16 +13648,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10324",
       "family_id": "F2581",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10325",
@@ -13757,17 +13759,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10334",
       "family_id": "F2584",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002584"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10335",
@@ -13777,19 +13779,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10336",
       "family_id": "F2584",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10337",
@@ -13889,36 +13888,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10346",
       "family_id": "F2587",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10347",
       "family_id": "F2587",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10348",
       "family_id": "F2587",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10349",
@@ -14019,7 +14021,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10358",
@@ -14027,19 +14029,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002590"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10359",
       "family_id": "F2590",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1036",
@@ -14061,7 +14063,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10361",
@@ -14152,7 +14154,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1037",
@@ -14172,7 +14174,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10371",
@@ -14182,7 +14184,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10372",
@@ -14191,7 +14193,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10373",
@@ -14291,7 +14293,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10382",
@@ -14299,19 +14301,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002596"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10383",
       "family_id": "F2596",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10384",
@@ -14323,7 +14325,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10385",
@@ -14423,7 +14425,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10394",
@@ -14433,7 +14435,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10395",
@@ -14443,7 +14445,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10396",
@@ -14452,7 +14454,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10397",
@@ -14555,7 +14557,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10406",
@@ -14563,9 +14565,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002602"
+        "nis": "00000001108"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10407",
@@ -14575,7 +14577,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10408",
@@ -14583,10 +14585,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10409",
@@ -14687,7 +14690,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10418",
@@ -14697,17 +14700,17 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10419",
       "family_id": "F2605",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1042",
@@ -14726,7 +14729,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10421",
@@ -14816,7 +14819,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1043",
@@ -14834,9 +14837,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002608"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10431",
@@ -14846,7 +14849,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10432",
@@ -14854,11 +14857,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10433",
@@ -14957,17 +14959,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10442",
       "family_id": "F2611",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001108"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10443",
@@ -14977,16 +14979,19 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10444",
       "family_id": "F2611",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10445",
@@ -15087,17 +15092,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10454",
       "family_id": "F2614",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002614"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10455",
@@ -15107,18 +15112,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10456",
       "family_id": "F2614",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10457",
@@ -15219,17 +15222,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10466",
       "family_id": "F2617",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10467",
@@ -15239,16 +15242,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10468",
       "family_id": "F2617",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10469",
@@ -15348,7 +15353,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10478",
@@ -15356,19 +15361,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002620"
+        "nis": "00000001108"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10479",
       "family_id": "F2620",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1048",
@@ -15392,7 +15397,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10481",
@@ -15482,7 +15487,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1049",
@@ -15502,7 +15507,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10491",
@@ -15512,7 +15517,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10492",
@@ -15521,7 +15526,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10493",
@@ -15622,7 +15627,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10502",
@@ -15630,9 +15635,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002626"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10503",
@@ -15642,7 +15647,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10504",
@@ -15653,7 +15658,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10505",
@@ -15754,7 +15759,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10514",
@@ -15764,7 +15769,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10515",
@@ -15774,7 +15779,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10516",
@@ -15783,7 +15788,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10517",
@@ -15882,17 +15887,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10526",
       "family_id": "F2632",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002632"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10527",
@@ -15902,19 +15907,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10528",
       "family_id": "F2632",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10529",
@@ -16014,27 +16016,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10538",
       "family_id": "F2635",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10539",
       "family_id": "F2635",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1054",
@@ -16051,9 +16053,11 @@
       "family_id": "F2635",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10541",
@@ -16144,7 +16148,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1055",
@@ -16161,10 +16165,10 @@
       "family_id": "F2638",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002638"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10551",
@@ -16174,18 +16178,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10552",
       "family_id": "F2638",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10553",
@@ -16288,7 +16290,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10562",
@@ -16298,7 +16300,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10563",
@@ -16308,7 +16310,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10564",
@@ -16317,7 +16319,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10565",
@@ -16417,7 +16419,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10574",
@@ -16425,9 +16427,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002644"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10575",
@@ -16437,7 +16439,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10576",
@@ -16445,11 +16447,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10577",
@@ -16549,7 +16550,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10586",
@@ -16559,7 +16560,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10587",
@@ -16569,7 +16570,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10588",
@@ -16578,7 +16579,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10589",
@@ -16679,27 +16680,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10598",
       "family_id": "F2650",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002650"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10599",
       "family_id": "F2650",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1060",
@@ -16715,11 +16716,9 @@
       "family_id": "F2650",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10601",
@@ -16810,7 +16809,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1061",
@@ -16827,10 +16826,10 @@
       "family_id": "F2653",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10611",
@@ -16840,16 +16839,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10612",
       "family_id": "F2653",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10613",
@@ -16949,17 +16950,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10622",
       "family_id": "F2656",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002656"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10623",
@@ -16969,19 +16970,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10624",
       "family_id": "F2656",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10625",
@@ -17081,36 +17079,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10634",
       "family_id": "F2659",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10635",
       "family_id": "F2659",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10636",
       "family_id": "F2659",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10637",
@@ -17212,7 +17213,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10646",
@@ -17220,9 +17221,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002662"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10647",
@@ -17232,7 +17233,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10648",
@@ -17243,7 +17244,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10649",
@@ -17344,7 +17345,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10658",
@@ -17354,17 +17355,17 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10659",
       "family_id": "F2665",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1066",
@@ -17383,7 +17384,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10661",
@@ -17473,7 +17474,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1067",
@@ -17491,19 +17492,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002668"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10671",
       "family_id": "F2668",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10672",
@@ -17515,7 +17516,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10673",
@@ -17614,17 +17615,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10682",
       "family_id": "F2671",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10683",
@@ -17634,16 +17635,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10684",
       "family_id": "F2671",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10685",
@@ -17744,17 +17747,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10694",
       "family_id": "F2674",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002674"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10695",
@@ -17764,18 +17767,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10696",
       "family_id": "F2674",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10697",
@@ -17876,36 +17877,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10706",
       "family_id": "F2677",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10707",
       "family_id": "F2677",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10708",
       "family_id": "F2677",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10709",
@@ -18005,7 +18009,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10718",
@@ -18013,19 +18017,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002680"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10719",
       "family_id": "F2680",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1072",
@@ -18044,11 +18048,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10721",
@@ -18138,7 +18141,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1073",
@@ -18158,7 +18161,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10731",
@@ -18168,7 +18171,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10732",
@@ -18177,7 +18180,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10733",
@@ -18278,7 +18281,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10742",
@@ -18286,19 +18289,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002686"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10743",
       "family_id": "F2686",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10744",
@@ -18306,10 +18309,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10745",
@@ -18410,7 +18414,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10754",
@@ -18420,7 +18424,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10755",
@@ -18430,7 +18434,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10756",
@@ -18439,7 +18443,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10757",
@@ -18538,17 +18542,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10766",
       "family_id": "F2692",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002692"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10767",
@@ -18558,19 +18562,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10768",
       "family_id": "F2692",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10769",
@@ -18670,17 +18671,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10778",
       "family_id": "F2695",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10779",
@@ -18690,7 +18691,7 @@
         "beneficiary": true,
         "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1078",
@@ -18707,9 +18708,12 @@
       "family_id": "F2695",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10781",
@@ -18800,7 +18804,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1079",
@@ -18817,10 +18821,10 @@
       "family_id": "F2698",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002698"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10791",
@@ -18830,18 +18834,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10792",
       "family_id": "F2698",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10793",
@@ -18943,17 +18945,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10802",
       "family_id": "F2701",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001108"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10803",
@@ -18963,16 +18965,19 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10804",
       "family_id": "F2701",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10805",
@@ -19072,17 +19077,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10814",
       "family_id": "F2704",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002704"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10815",
@@ -19092,19 +19097,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10816",
       "family_id": "F2704",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10817",
@@ -19204,17 +19206,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10826",
       "family_id": "F2707",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10827",
@@ -19224,16 +19226,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10828",
       "family_id": "F2707",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10829",
@@ -19334,7 +19338,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10838",
@@ -19342,19 +19346,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002710"
+        "nis": "00000001108"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10839",
       "family_id": "F2710",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1084",
@@ -19374,10 +19378,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10841",
@@ -19468,7 +19473,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1085",
@@ -19488,7 +19493,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10851",
@@ -19498,7 +19503,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10852",
@@ -19507,7 +19512,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10853",
@@ -19607,7 +19612,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10862",
@@ -19615,9 +19620,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002716"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10863",
@@ -19627,7 +19632,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10864",
@@ -19635,11 +19640,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10865",
@@ -19739,7 +19743,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10874",
@@ -19749,7 +19753,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10875",
@@ -19759,7 +19763,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10876",
@@ -19768,7 +19772,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10877",
@@ -19871,17 +19875,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10886",
       "family_id": "F2722",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002722"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10887",
@@ -19891,18 +19895,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10888",
       "family_id": "F2722",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10889",
@@ -20003,27 +20005,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10898",
       "family_id": "F2725",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10899",
       "family_id": "F2725",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1090",
@@ -20040,9 +20042,11 @@
       "family_id": "F2725",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10901",
@@ -20132,7 +20136,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1091",
@@ -20149,10 +20153,10 @@
       "family_id": "F2728",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002728"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10911",
@@ -20162,19 +20166,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10912",
       "family_id": "F2728",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10913",
@@ -20273,7 +20274,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10922",
@@ -20283,7 +20284,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10923",
@@ -20293,7 +20294,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10924",
@@ -20302,7 +20303,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10925",
@@ -20403,7 +20404,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10934",
@@ -20411,9 +20412,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002734"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10935",
@@ -20423,7 +20424,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10936",
@@ -20434,7 +20435,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10937",
@@ -20535,7 +20536,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10946",
@@ -20545,7 +20546,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10947",
@@ -20555,7 +20556,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10948",
@@ -20564,7 +20565,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10949",
@@ -20664,27 +20665,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10958",
       "family_id": "F2740",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002740"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10959",
       "family_id": "F2740",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1096",
@@ -20700,12 +20701,9 @@
       "family_id": "F2740",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10961",
@@ -20795,7 +20793,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1097",
@@ -20812,10 +20810,10 @@
       "family_id": "F2743",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10971",
@@ -20825,16 +20823,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10972",
       "family_id": "F2743",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10973",
@@ -20935,17 +20935,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10982",
       "family_id": "F2746",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002746"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10983",
@@ -20955,18 +20955,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10984",
       "family_id": "F2746",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10985",
@@ -21067,36 +21065,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10994",
       "family_id": "F2749",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10995",
       "family_id": "F2749",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10996",
       "family_id": "F2749",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV10997",
@@ -21195,7 +21196,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11006",
@@ -21203,9 +21204,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002752"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11007",
@@ -21215,7 +21216,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11008",
@@ -21223,11 +21224,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11009",
@@ -21327,7 +21327,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11018",
@@ -21337,17 +21337,17 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11019",
       "family_id": "F2755",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1102",
@@ -21366,7 +21366,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11021",
@@ -21457,7 +21457,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1103",
@@ -21475,19 +21475,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002758"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11031",
       "family_id": "F2758",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11032",
@@ -21495,10 +21495,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11033",
@@ -21601,17 +21602,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11042",
       "family_id": "F2761",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11043",
@@ -21621,16 +21622,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11044",
       "family_id": "F2761",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11045",
@@ -21730,17 +21733,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11054",
       "family_id": "F2764",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002764"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11055",
@@ -21750,19 +21753,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11056",
       "family_id": "F2764",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11057",
@@ -21862,36 +21862,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11066",
       "family_id": "F2767",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11067",
       "family_id": "F2767",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11068",
       "family_id": "F2767",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11069",
@@ -21992,7 +21995,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11078",
@@ -22000,19 +22003,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002770"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11079",
       "family_id": "F2770",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1108",
@@ -22034,7 +22037,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11081",
@@ -22125,7 +22128,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1109",
@@ -22145,7 +22148,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11091",
@@ -22155,7 +22158,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11092",
@@ -22164,7 +22167,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11093",
@@ -22264,7 +22267,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11102",
@@ -22272,19 +22275,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002776"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11103",
       "family_id": "F2776",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11104",
@@ -22296,7 +22299,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11105",
@@ -22396,7 +22399,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11114",
@@ -22406,7 +22409,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11115",
@@ -22416,7 +22419,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11116",
@@ -22425,7 +22428,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11117",
@@ -22527,17 +22530,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11126",
       "family_id": "F2782",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002782"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11127",
@@ -22547,18 +22550,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11128",
       "family_id": "F2782",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11129",
@@ -22659,17 +22660,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11138",
       "family_id": "F2785",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11139",
@@ -22679,7 +22680,7 @@
         "beneficiary": true,
         "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1114",
@@ -22696,9 +22697,12 @@
       "family_id": "F2785",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11141",
@@ -22788,7 +22792,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1115",
@@ -22805,10 +22809,10 @@
       "family_id": "F2788",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002788"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11151",
@@ -22818,19 +22822,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11152",
       "family_id": "F2788",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11153",
@@ -22929,7 +22930,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11162",
@@ -22939,7 +22940,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11163",
@@ -22949,7 +22950,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11164",
@@ -22958,7 +22959,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11165",
@@ -23059,7 +23060,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11174",
@@ -23067,19 +23068,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002794"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11175",
       "family_id": "F2794",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11176",
@@ -23087,10 +23088,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11177",
@@ -23191,7 +23193,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11186",
@@ -23201,7 +23203,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11187",
@@ -23211,7 +23213,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11188",
@@ -23220,7 +23222,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11189",
@@ -23320,7 +23322,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11198",
@@ -23328,19 +23330,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002800"
+        "nis": "00000001108"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11199",
       "family_id": "F2800",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1120",
@@ -23364,7 +23366,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11201",
@@ -23454,7 +23456,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1121",
@@ -23474,7 +23476,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11211",
@@ -23484,7 +23486,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11212",
@@ -23493,7 +23495,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11213",
@@ -23594,7 +23596,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11222",
@@ -23602,9 +23604,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002806"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11223",
@@ -23614,7 +23616,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11224",
@@ -23625,7 +23627,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11225",
@@ -23726,7 +23728,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11234",
@@ -23736,7 +23738,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11235",
@@ -23746,7 +23748,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11236",
@@ -23755,7 +23757,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11237",
@@ -23854,17 +23856,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11246",
       "family_id": "F2812",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002812"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11247",
@@ -23874,19 +23876,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11248",
       "family_id": "F2812",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11249",
@@ -23986,27 +23985,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11258",
       "family_id": "F2815",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11259",
       "family_id": "F2815",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1126",
@@ -24023,9 +24022,11 @@
       "family_id": "F2815",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11261",
@@ -24116,7 +24117,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1127",
@@ -24133,10 +24134,10 @@
       "family_id": "F2818",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002818"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11271",
@@ -24146,18 +24147,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11272",
       "family_id": "F2818",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11273",
@@ -24259,7 +24258,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11282",
@@ -24269,7 +24268,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11283",
@@ -24279,7 +24278,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11284",
@@ -24288,7 +24287,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11285",
@@ -24388,7 +24387,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11294",
@@ -24396,9 +24395,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002824"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11295",
@@ -24408,7 +24407,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11296",
@@ -24416,11 +24415,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11297",
@@ -24520,7 +24518,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11306",
@@ -24530,7 +24528,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11307",
@@ -24540,7 +24538,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11308",
@@ -24549,7 +24547,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11309",
@@ -24650,27 +24648,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11318",
       "family_id": "F2830",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002830"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11319",
       "family_id": "F2830",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1132",
@@ -24686,11 +24684,9 @@
       "family_id": "F2830",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11321",
@@ -24781,7 +24777,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1133",
@@ -24798,10 +24794,10 @@
       "family_id": "F2833",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11331",
@@ -24811,16 +24807,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11332",
       "family_id": "F2833",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11333",
@@ -24920,17 +24918,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11342",
       "family_id": "F2836",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002836"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11343",
@@ -24940,19 +24938,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11344",
       "family_id": "F2836",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11345",
@@ -25052,36 +25047,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11354",
       "family_id": "F2839",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11355",
       "family_id": "F2839",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11356",
       "family_id": "F2839",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11357",
@@ -25184,7 +25182,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11366",
@@ -25192,9 +25190,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002842"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11367",
@@ -25204,7 +25202,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11368",
@@ -25215,7 +25213,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11369",
@@ -25316,7 +25314,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11378",
@@ -25326,17 +25324,17 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11379",
       "family_id": "F2845",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1138",
@@ -25355,7 +25353,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11381",
@@ -25445,7 +25443,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1139",
@@ -25463,19 +25461,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002848"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11391",
       "family_id": "F2848",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11392",
@@ -25487,7 +25485,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11393",
@@ -25586,17 +25584,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11402",
       "family_id": "F2851",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11403",
@@ -25606,16 +25604,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11404",
       "family_id": "F2851",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11405",
@@ -25716,17 +25716,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11414",
       "family_id": "F2854",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002854"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11415",
@@ -25736,18 +25736,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11416",
       "family_id": "F2854",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11417",
@@ -25848,36 +25846,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11426",
       "family_id": "F2857",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11427",
       "family_id": "F2857",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11428",
       "family_id": "F2857",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11429",
@@ -25977,7 +25978,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11438",
@@ -25985,19 +25986,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002860"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11439",
       "family_id": "F2860",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1144",
@@ -26016,11 +26017,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11441",
@@ -26110,7 +26110,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1145",
@@ -26130,7 +26130,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11451",
@@ -26140,7 +26140,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11452",
@@ -26149,7 +26149,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11453",
@@ -26250,7 +26250,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11462",
@@ -26258,19 +26258,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002866"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11463",
       "family_id": "F2866",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11464",
@@ -26278,10 +26278,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11465",
@@ -26382,7 +26383,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11474",
@@ -26392,7 +26393,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11475",
@@ -26402,7 +26403,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11476",
@@ -26411,7 +26412,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11477",
@@ -26510,17 +26511,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11486",
       "family_id": "F2872",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002872"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11487",
@@ -26530,19 +26531,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11488",
       "family_id": "F2872",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11489",
@@ -26642,17 +26640,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11498",
       "family_id": "F2875",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11499",
@@ -26662,7 +26660,7 @@
         "beneficiary": true,
         "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1150",
@@ -26679,9 +26677,12 @@
       "family_id": "F2875",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11501",
@@ -26772,7 +26773,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1151",
@@ -26789,10 +26790,10 @@
       "family_id": "F2878",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002878"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11511",
@@ -26802,18 +26803,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11512",
       "family_id": "F2878",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11513",
@@ -26916,7 +26915,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11522",
@@ -26926,7 +26925,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11523",
@@ -26936,7 +26935,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11524",
@@ -26945,7 +26944,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11525",
@@ -27045,7 +27044,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11534",
@@ -27053,19 +27052,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002884"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11535",
       "family_id": "F2884",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11536",
@@ -27077,7 +27076,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11537",
@@ -27177,7 +27176,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11546",
@@ -27187,7 +27186,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11547",
@@ -27197,7 +27196,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11548",
@@ -27206,7 +27205,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11549",
@@ -27307,27 +27306,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11558",
       "family_id": "F2890",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002890"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11559",
       "family_id": "F2890",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1156",
@@ -27343,11 +27342,9 @@
       "family_id": "F2890",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11561",
@@ -27438,7 +27435,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1157",
@@ -27455,29 +27452,32 @@
       "family_id": "F2893",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11571",
       "family_id": "F2893",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11572",
       "family_id": "F2893",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11573",
@@ -27577,17 +27577,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11582",
       "family_id": "F2896",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002896"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11583",
@@ -27597,19 +27597,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11584",
       "family_id": "F2896",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11585",
@@ -27709,17 +27706,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11594",
       "family_id": "F2899",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001126"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11595",
@@ -27729,16 +27726,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11596",
       "family_id": "F2899",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11597",
@@ -27840,17 +27839,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11606",
       "family_id": "F2902",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002902"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11607",
@@ -27860,18 +27859,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11608",
       "family_id": "F2902",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11609",
@@ -27972,27 +27969,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11618",
       "family_id": "F2905",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11619",
       "family_id": "F2905",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1162",
@@ -28009,9 +28006,11 @@
       "family_id": "F2905",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11621",
@@ -28101,7 +28100,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1163",
@@ -28118,10 +28117,10 @@
       "family_id": "F2908",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002908"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11631",
@@ -28131,19 +28130,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11632",
       "family_id": "F2908",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11633",
@@ -28242,7 +28238,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11642",
@@ -28252,7 +28248,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11643",
@@ -28262,7 +28258,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11644",
@@ -28271,7 +28267,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11645",
@@ -28372,7 +28368,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11654",
@@ -28380,9 +28376,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002914"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11655",
@@ -28392,7 +28388,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11656",
@@ -28403,7 +28399,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11657",
@@ -28504,7 +28500,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11666",
@@ -28514,7 +28510,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11667",
@@ -28524,7 +28520,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11668",
@@ -28533,7 +28529,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11669",
@@ -28633,27 +28629,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11678",
       "family_id": "F2920",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002920"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11679",
       "family_id": "F2920",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1168",
@@ -28669,12 +28665,9 @@
       "family_id": "F2920",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11681",
@@ -28764,7 +28757,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1169",
@@ -28781,10 +28774,10 @@
       "family_id": "F2923",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11691",
@@ -28794,16 +28787,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11692",
       "family_id": "F2923",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11693",
@@ -28904,17 +28899,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11702",
       "family_id": "F2926",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002926"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11703",
@@ -28924,18 +28919,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11704",
       "family_id": "F2926",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11705",
@@ -29036,36 +29029,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11714",
       "family_id": "F2929",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11715",
       "family_id": "F2929",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11716",
       "family_id": "F2929",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11717",
@@ -29164,7 +29160,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11726",
@@ -29172,9 +29168,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002932"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11727",
@@ -29184,7 +29180,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11728",
@@ -29192,11 +29188,10 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
+          "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11729",
@@ -29296,7 +29291,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11738",
@@ -29306,17 +29301,17 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11739",
       "family_id": "F2935",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1174",
@@ -29335,7 +29330,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11741",
@@ -29426,7 +29421,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1175",
@@ -29444,19 +29439,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002938"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11751",
       "family_id": "F2938",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11752",
@@ -29464,10 +29459,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11753",
@@ -29569,17 +29565,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11762",
       "family_id": "F2941",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11763",
@@ -29589,16 +29585,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11764",
       "family_id": "F2941",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11765",
@@ -29698,17 +29696,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11774",
       "family_id": "F2944",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002944"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11775",
@@ -29718,19 +29716,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11776",
       "family_id": "F2944",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11777",
@@ -29830,36 +29825,39 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11786",
       "family_id": "F2947",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11787",
       "family_id": "F2947",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11788",
       "family_id": "F2947",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11789",
@@ -29960,7 +29958,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11798",
@@ -29968,19 +29966,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002950"
+        "nis": "00000001114"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11799",
       "family_id": "F2950",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1180",
@@ -30002,7 +30000,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11801",
@@ -30093,7 +30091,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1181",
@@ -30113,7 +30111,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11811",
@@ -30123,7 +30121,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11812",
@@ -30132,7 +30130,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11813",
@@ -30232,7 +30230,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11822",
@@ -30240,19 +30238,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002956"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11823",
       "family_id": "F2956",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11824",
@@ -30264,7 +30262,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11825",
@@ -30364,7 +30362,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11834",
@@ -30374,7 +30372,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11835",
@@ -30384,7 +30382,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11836",
@@ -30393,7 +30391,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11837",
@@ -30496,17 +30494,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11846",
       "family_id": "F2962",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002962"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11847",
@@ -30516,18 +30514,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11848",
       "family_id": "F2962",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11849",
@@ -30628,17 +30624,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11858",
       "family_id": "F2965",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11859",
@@ -30648,7 +30644,7 @@
         "beneficiary": true,
         "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1186",
@@ -30665,9 +30661,12 @@
       "family_id": "F2965",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11861",
@@ -30757,7 +30756,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1187",
@@ -30774,10 +30773,10 @@
       "family_id": "F2968",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002968"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11871",
@@ -30787,19 +30786,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11872",
       "family_id": "F2968",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11873",
@@ -30898,7 +30894,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11882",
@@ -30908,7 +30904,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11883",
@@ -30918,7 +30914,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11884",
@@ -30927,7 +30923,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11885",
@@ -31028,7 +31024,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11894",
@@ -31036,19 +31032,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002974"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11895",
       "family_id": "F2974",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11896",
@@ -31056,10 +31052,11 @@
       "source": "outro",
       "payload": {
         "services": [
-          "transporte_escolar"
+          "transporte_escolar",
+          "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11897",
@@ -31160,7 +31157,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11906",
@@ -31170,7 +31167,7 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11907",
@@ -31180,7 +31177,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11908",
@@ -31189,7 +31186,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11909",
@@ -31289,27 +31286,27 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11918",
       "family_id": "F2980",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002980"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11919",
       "family_id": "F2980",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1192",
@@ -31325,12 +31322,9 @@
       "family_id": "F2980",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar",
-          "programa_alimentacao"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11921",
@@ -31420,7 +31414,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1193",
@@ -31437,29 +31431,32 @@
       "family_id": "F2983",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11931",
       "family_id": "F2983",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11932",
       "family_id": "F2983",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar",
+          "programa_alimentacao"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11933",
@@ -31560,17 +31557,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11942",
       "family_id": "F2986",
       "source": "cad_unico",
       "payload": {
-        "registered": true,
-        "nis": "00000002986"
+        "registered": false,
+        "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11943",
@@ -31580,18 +31577,16 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11944",
       "family_id": "F2986",
       "source": "outro",
       "payload": {
-        "services": [
-          "transporte_escolar"
-        ]
+        "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11945",
@@ -31692,17 +31687,17 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11954",
       "family_id": "F2989",
       "source": "cad_unico",
       "payload": {
-        "registered": false,
-        "nis": null
+        "registered": true,
+        "nis": "00000001126"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11955",
@@ -31712,16 +31707,18 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11956",
       "family_id": "F2989",
       "source": "outro",
       "payload": {
-        "services": []
+        "services": [
+          "transporte_escolar"
+        ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11957",
@@ -31820,7 +31817,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11966",
@@ -31828,19 +31825,19 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002992"
+        "nis": "00000001120"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11967",
       "family_id": "F2992",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": false,
-        "status": "avaliacao"
+        "beneficiary": true,
+        "status": "ativo"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11968",
@@ -31852,7 +31849,7 @@
           "programa_alimentacao"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11969",
@@ -31952,7 +31949,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11978",
@@ -31962,17 +31959,17 @@
         "registered": false,
         "nis": null
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11979",
       "family_id": "F2995",
       "source": "bolsa_familia",
       "payload": {
-        "beneficiary": true,
-        "status": "ativo"
+        "beneficiary": false,
+        "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1198",
@@ -31991,7 +31988,7 @@
       "payload": {
         "services": []
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11981",
@@ -32082,7 +32079,7 @@
         "registered": true,
         "unit": "UBS Sao Paulo Central"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV1199",
@@ -32100,9 +32097,9 @@
       "source": "cad_unico",
       "payload": {
         "registered": true,
-        "nis": "00000002998"
+        "nis": "00000001126"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11991",
@@ -32112,7 +32109,7 @@
         "beneficiary": false,
         "status": "avaliacao"
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11992",
@@ -32123,7 +32120,7 @@
           "transporte_escolar"
         ]
       },
-      "fetched_at": "2025-10-25T21:07:25+00:00"
+      "fetched_at": "2025-10-25T21:56:53+00:00"
     },
     {
       "id": "SV11993",

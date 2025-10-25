@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
 
 import AppRoutes from "./routes";
 import Layout from "./components/Layout";
@@ -15,9 +14,7 @@ const App = () => {
         </div>
       }
     >
-      <AppRoutes layout={<Layout />}>
-        <Outlet />
-      </AppRoutes>
+      <AppRoutes layout={<Layout />} />
     </Suspense>
   );
 };

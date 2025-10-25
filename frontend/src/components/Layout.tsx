@@ -5,9 +5,10 @@ import clsx from "clsx";
 import { useVolunteerStore } from "../store/useVolunteer";
 
 const navItems = [
-  { to: "/dashboard", label: "Visão Geral" },
+  { to: "/dashboard", label: "Match do Cuidado" },
   { to: "/cases", label: "Meus Chamados" },
-  { to: "/search", label: "Buscar Atendimentos" },
+  { to: "/map", label: "Mapa" },
+  { to: "/search", label: "Buscar" },
 ];
 
 const Layout = ({ children }: PropsWithChildren) => {

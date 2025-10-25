@@ -30,6 +30,13 @@ const Search = () => {
   const [accessibleOnly, setAccessibleOnly] = useState(false);
   const [bestForMe, setBestForMe] = useState(false);
 
+  useEffect(() => {
+    if (volunteer) {
+      setZone(volunteer.zone);
+      setRadiusKm(volunteer.radius_km);
+    }
+  }, [volunteer]);
+
   const studentsQuery = useQuery({
     queryKey: ["students", zone],
     queryFn: () => fetchStudents(zone),
@@ -233,9 +240,3 @@ const Search = () => {
 };
 
 export default Search;
-  useEffect(() => {
-    if (volunteer) {
-      setZone(volunteer.zone);
-      setRadiusKm(volunteer.radius_km);
-    }
-  }, [volunteer]);

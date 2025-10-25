@@ -6,10 +6,11 @@ import { useVolunteerStore } from "./store/useVolunteer";
 const OnboardingSelectVolunteer = lazy(
   () => import("./pages/OnboardingSelectVolunteer"),
 );
-const Overview = lazy(() => import("./pages/Overview"));
+const DashboardMatch = lazy(() => import("./pages/DashboardMatch"));
 const Cases = lazy(() => import("./pages/Cases"));
 const Search = lazy(() => import("./pages/Search"));
 const StudentDetails = lazy(() => import("./pages/StudentDetails"));
+const MapPage = lazy(() => import("./pages/MapPage"));
 
 type AppRoutesProps = {
   layout: ReactElement;
@@ -27,8 +28,9 @@ const AppRoutes = ({ layout }: AppRoutesProps) => {
         element={volunteer ? layout : <Navigate to="/onboarding" replace />}
       >
         <Route index element={<Navigate to="/dashboard" replace />} />
-        <Route path="dashboard" element={<Overview />} />
+        <Route path="dashboard" element={<DashboardMatch />} />
         <Route path="cases" element={<Cases />} />
+        <Route path="map" element={<MapPage />} />
         <Route path="search" element={<Search />} />
         <Route path="students/:id" element={<StudentDetails />} />
       </Route>

@@ -66,8 +66,7 @@ export const buildSuggestions = ({
     const family = familiesById[student.family_id];
     const tags = new Set<string>(student.tags ?? []);
     let score = 0;
-    let severity: SuggestionSeverity = "medium";
-    let reason = "Aluno com dados recentes para acompanhamento contínuo.";
+    let reason = "Acompanhamento contínuo recomendado.";
     let ctaLabel = "Ver detalhes";
 
     const wheelchair = student.disabilities?.wheelchair_user;
@@ -79,18 +78,16 @@ export const buildSuggestions = ({
 
     if (wheelchair && hasElderlyGuardian) {
       score += 40;
-      severity = "high";
       reason =
-        "Aluno com necessidade de mobilidade e familiar idoso. Avalie apoio no trajeto.";
+        "Aluno com necessidade de mobilidade acompanhado por familiar idoso. Avalie apoio no trajeto.";
       ctaLabel = "Solicitar apoio de mobilidade";
       tags.add("mobilidade");
     }
 
     if (student.attendance_last_30d.absences >= 3) {
       score += 30;
-      severity = "high";
       reason =
-        "Frequência com ausências recorrentes. Incentive contato acolhedor com a família.";
+        "Faltas repetidas sinalizam barreiras. Um contato acolhedor pode apoiar a presença.";
       if (ctaLabel === "Ver detalhes") {
         ctaLabel = "Enviar mensagem respeitosa";
       }
@@ -103,16 +100,15 @@ export const buildSuggestions = ({
     if (lowIncome && !cadUnicoRegistered) {
       score += 30;
       reason =
-        "Família com sinais de baixa renda ainda sem CadÚnico ativo. Oriente sobre cadastro.";
+        "Família com renda sensível sem CadÚnico ativo. Considere orientar procura ao CRAS.";
       ctaLabel = "Orientar cadastro CadÚnico";
       tags.add("cadunico");
     }
 
     if (distanceKm > volunteer.radius_km) {
       score += 20;
-      severity = "medium";
       reason =
-        "Aluno fora do raio habitual. Confirme se é necessário solicitar redistribuição.";
+        "Aluno fora do raio habitual. Reavalie logística ou solicite redistribuição.";
       ctaLabel = "Solicitar reatribuição";
       tags.add("distancia");
     }
@@ -127,20 +123,31 @@ export const buildSuggestions = ({
     ) {
       score += 15;
       reason =
-        "Transporte escolar ativo, mas com faltas recentes. Verifique se o serviço está funcionando.";
+        "Transporte escolar ativo, mas com faltas recentes. Confirme se o serviço está disponível no turno.";
       ctaLabel = "Confirmar adesão ao transporte";
       tags.add("transporte");
     }
 
     if (activeCases >= 8 && score > 0) {
-      score *= 0.75;
+      score -= 15;
     }
 
     if (score === 0) {
       score = 25;
-      severity = "low";
       reason =
-        "Caso elegível para acompanhamento leve. Reforce acolhimento e presença.";
+        "Caso de acompanhamento leve. Um contato acolhedor fortalece a presença.";
+    }
+
+    const computedScore = Math.round(score);
+    let severity: SuggestionSeverity = "low";
+    if (computedScore >= 60) {
+      severity = "high";
+    } else if (computedScore >= 40) {
+      severity = "medium";
+    }
+
+    if (ctaLabel === "Ver detalhes") {
+      ctaLabel = severity === "high" ? "Ajudar agora" : "Ver detalhes";
     }
 
     items.push({
@@ -152,7 +159,7 @@ export const buildSuggestions = ({
         `Aluno da turma ${student.school.classroom} na escola ${student.school.school_name}.`,
       severity,
       tags: Array.from(tags),
-      score: Math.round(score),
+      score: computedScore,
       reason,
       ctaLabel,
       distanceKm,
