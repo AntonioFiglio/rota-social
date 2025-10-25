@@ -1,0 +1,91 @@
+{
+  "volunteers": [
+    {
+      "id": "V0001",
+      "name": "Bruna Lima",
+      "zone": "Sao Paulo",
+      "address": {
+        "street": "Av. Paulista",
+        "number": "1000",
+        "neighborhood": "Bela Vista",
+        "city": "São Paulo",
+        "state": "SP",
+        "postal_code": "01310-000"
+      },
+      "contact": {
+        "phone": "+55 11 97777-7777",
+        "email": "bruna@example.com",
+        "whatsapp_preferred": true
+      },
+      "coordinates": { "latitude": -23.5610, "longitude": -46.6560 },
+      "max_students": 10,
+      "radius_km": 8.0,
+      "availability": { "weekdays": ["mon", "wed", "fri"], "time_slots": ["morning", "afternoon"] },
+      "skills": ["reforço português", "matemática básica"],
+      "languages": ["pt-BR"],
+      "experience_years": 2,
+      "accessibility": { "mobility_assistance": true, "vehicle_type": "car" },
+      "verified": false,
+      "warm_notes": "Prefere alunos a até 6 km.",
+      "tags": ["tutor", "reforço", "acessibilidade"]
+    },
+    {
+      "id": "V0002",
+      "name": "Carlos Nunes",
+      "zone": "Franca",
+      "address": {
+        "street": "Rua do Comércio",
+        "number": "200",
+        "neighborhood": "Centro",
+        "city": "Franca",
+        "state": "SP",
+        "postal_code": "14400-200"
+      },
+      "contact": {
+        "phone": "+55 16 98888-2222",
+        "email": "carlos@example.com",
+        "whatsapp_preferred": true
+      },
+      "coordinates": { "latitude": -20.5375, "longitude": -47.4012 },
+      "max_students": 10,
+      "radius_km": 7.0,
+      "availability": { "weekdays": ["tue", "thu"], "time_slots": ["afternoon"] },
+      "skills": ["matemática básica", "ciências"],
+      "languages": ["pt-BR"],
+      "experience_years": 1,
+      "accessibility": { "mobility_assistance": false, "vehicle_type": "bike" },
+      "verified": true,
+      "warm_notes": "Disponível para encontros em escolas municipais.",
+      "tags": ["tutor", "voluntario"]
+    },
+    {
+      "id": "V0003",
+      "name": "Renata Faria",
+      "zone": "Goiania",
+      "address": {
+        "street": "Avenida Goiás",
+        "number": "500",
+        "neighborhood": "Setor Central",
+        "city": "Goiânia",
+        "state": "GO",
+        "postal_code": "74000-500"
+      },
+      "contact": {
+        "phone": "+55 62 96666-6666",
+        "email": "renata@example.com",
+        "whatsapp_preferred": false
+      },
+      "coordinates": { "latitude": -16.6860, "longitude": -49.2635 },
+      "max_students": 10,
+      "radius_km": 9.0,
+      "availability": { "weekdays": ["sat"], "time_slots": ["morning"] },
+      "skills": ["leitura", "artes"],
+      "languages": ["pt-BR"],
+      "experience_years": 3,
+      "accessibility": { "mobility_assistance": false, "vehicle_type": "public_transport" },
+      "verified": true,
+      "warm_notes": "Participa de clubes de leitura na comunidade.",
+      "tags": ["tutor", "cultura"]
+    }
+  ]
+}

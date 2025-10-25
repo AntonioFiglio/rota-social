@@ -1,0 +1,5 @@
+{
+  "max_students_default": 10,
+  "max_radius_km": 8.0,
+  "min_students_per_zone_after_sync": 5
+}

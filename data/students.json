@@ -1,0 +1,61 @@
+{
+  "students": [
+    {
+      "id": "S0001",
+      "person_id": "P0002",
+      "family_id": "F0001",
+      "zone": "Sao Paulo",
+      "school": {
+        "school_id": "ESC001",
+        "school_name": "EE Bairro Centro",
+        "grade": "7º ano",
+        "classroom": "7B",
+        "shift": "manhã",
+        "enrollment_status": "ativo"
+      },
+      "attendance_last_30d": { "absences": 3, "delays": 2 },
+      "disabilities": { "wheelchair_user": true },
+      "warm_notes": "Aluno acompanha avó e relata dificuldade de transporte coletivo.",
+      "coordinates": { "latitude": -23.5510, "longitude": -46.6310 },
+      "tags": ["transporte", "acessibilidade"]
+    },
+    {
+      "id": "S0002",
+      "person_id": "P0004",
+      "family_id": "F0002",
+      "zone": "Franca",
+      "school": {
+        "school_id": "ESC101",
+        "school_name": "EE João Martins",
+        "grade": "8º ano",
+        "classroom": "8A",
+        "shift": "tarde",
+        "enrollment_status": "ativo"
+      },
+      "attendance_last_30d": { "absences": 1, "delays": 1 },
+      "disabilities": { "wheelchair_user": false },
+      "warm_notes": "Precisa reforço de matemática básica.",
+      "coordinates": { "latitude": -20.5384, "longitude": -47.4009 },
+      "tags": ["reforco", "matematica"]
+    },
+    {
+      "id": "S0003",
+      "person_id": "P0006",
+      "family_id": "F0003",
+      "zone": "Goiania",
+      "school": {
+        "school_id": "ESC205",
+        "school_name": "EM Tiago Monteiro",
+        "grade": "6º ano",
+        "classroom": "6C",
+        "shift": "manhã",
+        "enrollment_status": "ativo"
+      },
+      "attendance_last_30d": { "absences": 2, "delays": 0 },
+      "disabilities": { "wheelchair_user": false },
+      "warm_notes": "Interessada em atividades de leitura e artes.",
+      "coordinates": { "latitude": -16.6865, "longitude": -49.2650 },
+      "tags": ["leitura", "artes"]
+    }
+  ]
+}

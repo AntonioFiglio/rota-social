@@ -1,0 +1,67 @@
+{
+  "families": [
+    {
+      "id": "F0001",
+      "household": [
+        { "person_id": "P0001", "role": "guardian" },
+        { "person_id": "P0002", "role": "student" }
+      ],
+      "external_services": {
+        "sus": { "registered": true, "unit": "UBS Centro SP", "last_update": "2025-10-25T12:00:00Z" },
+        "cad_unico": { "registered": true, "nis": "12345678900", "last_update": "2025-10-25T12:00:00Z" },
+        "bolsa_familia": { "beneficiary": false, "status": "nao_elegivel", "last_update": "2025-10-25T12:00:00Z" },
+        "others": [ { "name": "transporte_escolar", "active": true } ]
+      },
+      "eligibility_signals": ["low_income", "elderly_guardian"],
+      "consent": { "family_granted": true, "updated_at": "2025-10-25T12:00:00Z" },
+      "record_linkage": {
+        "inputs": ["SED", "SUS", "CadÚnico", "Bolsa Família"],
+        "confidence": 0.92,
+        "explanations": ["CPF e endereço coincidem (mock)."]
+      },
+      "warm_notes": "Família com dificuldade de locomoção para levar aluno à escola."
+    },
+    {
+      "id": "F0002",
+      "household": [
+        { "person_id": "P0003", "role": "guardian" },
+        { "person_id": "P0004", "role": "student" }
+      ],
+      "external_services": {
+        "sus": { "registered": true, "unit": "UBS Franca Norte", "last_update": "2025-10-25T12:00:00Z" },
+        "cad_unico": { "registered": true, "nis": "22345678900", "last_update": "2025-10-25T12:00:00Z" },
+        "bolsa_familia": { "beneficiary": true, "status": "ativo", "last_update": "2025-10-25T12:00:00Z" },
+        "others": [ { "name": "auxilio_material", "active": true } ]
+      },
+      "eligibility_signals": ["low_income", "single_parent"],
+      "consent": { "family_granted": true, "updated_at": "2025-10-25T12:00:00Z" },
+      "record_linkage": {
+        "inputs": ["SED", "SUS", "CadÚnico", "Bolsa Família"],
+        "confidence": 0.88,
+        "explanations": ["Dados de endereço e telefone consistentes (mock)."]
+      },
+      "warm_notes": "Responsável busca reforço escolar para o filho."
+    },
+    {
+      "id": "F0003",
+      "household": [
+        { "person_id": "P0005", "role": "guardian" },
+        { "person_id": "P0006", "role": "student" }
+      ],
+      "external_services": {
+        "sus": { "registered": true, "unit": "UBS Goiânia Leste", "last_update": "2025-10-25T12:00:00Z" },
+        "cad_unico": { "registered": false, "nis": null, "last_update": "2025-10-25T12:00:00Z" },
+        "bolsa_familia": { "beneficiary": false, "status": "nao_solicitado", "last_update": "2025-10-25T12:00:00Z" },
+        "others": [ { "name": "cultura_comunitaria", "active": true } ]
+      },
+      "eligibility_signals": ["cultura", "apoio_leitura"],
+      "consent": { "family_granted": true, "updated_at": "2025-10-25T12:00:00Z" },
+      "record_linkage": {
+        "inputs": ["SED", "SUS"],
+        "confidence": 0.81,
+        "explanations": ["Cadastro no SUS e matrícula escolar com mesmo endereço (mock)."]
+      },
+      "warm_notes": "Família interessada em atividades culturais e leitura."
+    }
+  ]
+}

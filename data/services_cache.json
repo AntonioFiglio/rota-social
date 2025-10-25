@@ -1,0 +1,32 @@
+{
+  "services": [
+    {
+      "id": "SV0001",
+      "family_id": "F0001",
+      "source": "sus",
+      "payload": { "registered": true, "unit": "UBS Centro SP" },
+      "fetched_at": "2025-10-25T12:00:00Z"
+    },
+    {
+      "id": "SV0002",
+      "family_id": "F0001",
+      "source": "cad_unico",
+      "payload": { "registered": true, "nis": "12345678900" },
+      "fetched_at": "2025-10-25T12:00:00Z"
+    },
+    {
+      "id": "SV0003",
+      "family_id": "F0002",
+      "source": "bolsa_familia",
+      "payload": { "beneficiary": true, "status": "ativo" },
+      "fetched_at": "2025-10-25T12:00:00Z"
+    },
+    {
+      "id": "SV0004",
+      "family_id": "F0003",
+      "source": "sus",
+      "payload": { "registered": true, "unit": "UBS Goiânia Leste" },
+      "fetched_at": "2025-10-25T12:00:00Z"
+    }
+  ]
+}

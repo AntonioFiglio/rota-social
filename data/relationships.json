@@ -1,0 +1,25 @@
+{
+  "edges": [
+    {
+      "id": "E0001",
+      "from_person_id": "P0001",
+      "to_person_id": "P0002",
+      "type": "guardian_of",
+      "weight": 1.0
+    },
+    {
+      "id": "E0002",
+      "from_person_id": "P0003",
+      "to_person_id": "P0004",
+      "type": "guardian_of",
+      "weight": 1.0
+    },
+    {
+      "id": "E0003",
+      "from_person_id": "P0005",
+      "to_person_id": "P0006",
+      "type": "guardian_of",
+      "weight": 1.0
+    }
+  ]
+}

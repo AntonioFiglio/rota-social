@@ -1,0 +1,184 @@
+{
+  "persons": [
+    {
+      "id": "P0001",
+      "name": "Ana Santos",
+      "preferred_name": "Ana",
+      "document": { "type": "RG", "number": "SP-000001" },
+      "birthdate": "1960-05-10",
+      "gender": "female",
+      "profession": "aposentada",
+      "address": {
+        "street": "Rua das Flores",
+        "number": "123",
+        "complement": "Casa",
+        "neighborhood": "Centro",
+        "city": "São Paulo",
+        "state": "SP",
+        "postal_code": "01000-000"
+      },
+      "contacts": {
+        "phone": "+55 11 90000-0000",
+        "email": "ana@example.com",
+        "preferred_channel": "whatsapp"
+      },
+      "coordinates": { "latitude": -23.5500, "longitude": -46.6300 },
+      "vulnerability_flags": {
+        "elderly": true,
+        "single_parent": false,
+        "low_income": true
+      },
+      "tags": ["responsavel", "elderly_guardian"]
+    },
+    {
+      "id": "P0002",
+      "name": "Lucas Santos",
+      "preferred_name": "Lucas",
+      "document": { "type": "RM", "number": "ST-000001" },
+      "birthdate": "2012-08-15",
+      "gender": "male",
+      "profession": "estudante",
+      "address": {
+        "street": "Rua das Flores",
+        "number": "123",
+        "complement": "Casa",
+        "neighborhood": "Centro",
+        "city": "São Paulo",
+        "state": "SP",
+        "postal_code": "01000-000"
+      },
+      "contacts": {
+        "phone": "+55 11 98888-8888",
+        "email": "lucas@example.com",
+        "preferred_channel": "whatsapp"
+      },
+      "coordinates": { "latitude": -23.5510, "longitude": -46.6310 },
+      "vulnerability_flags": {
+        "elderly": false,
+        "single_parent": false,
+        "low_income": true
+      },
+      "tags": ["student"]
+    },
+    {
+      "id": "P0003",
+      "name": "Marta Oliveira",
+      "preferred_name": "Marta",
+      "document": { "type": "RG", "number": "SP-000002" },
+      "birthdate": "1982-01-20",
+      "gender": "female",
+      "profession": "costureira",
+      "address": {
+        "street": "Rua das Acácias",
+        "number": "45",
+        "complement": "Casa",
+        "neighborhood": "Centro",
+        "city": "Franca",
+        "state": "SP",
+        "postal_code": "14400-000"
+      },
+      "contacts": {
+        "phone": "+55 16 97777-1111",
+        "email": "marta@example.com",
+        "preferred_channel": "telefone"
+      },
+      "coordinates": { "latitude": -20.5390, "longitude": -47.4015 },
+      "vulnerability_flags": {
+        "elderly": false,
+        "single_parent": true,
+        "low_income": true
+      },
+      "tags": ["responsavel", "single_parent"]
+    },
+    {
+      "id": "P0004",
+      "name": "Pedro Oliveira",
+      "preferred_name": "Pedro",
+      "document": { "type": "RM", "number": "ST-000002" },
+      "birthdate": "2011-03-05",
+      "gender": "male",
+      "profession": "estudante",
+      "address": {
+        "street": "Rua das Acácias",
+        "number": "45",
+        "complement": "Casa",
+        "neighborhood": "Centro",
+        "city": "Franca",
+        "state": "SP",
+        "postal_code": "14400-000"
+      },
+      "contacts": {
+        "phone": "+55 16 95555-2222",
+        "email": "pedro@example.com",
+        "preferred_channel": "telefone"
+      },
+      "coordinates": { "latitude": -20.5384, "longitude": -47.4009 },
+      "vulnerability_flags": {
+        "elderly": false,
+        "single_parent": true,
+        "low_income": true
+      },
+      "tags": ["student"]
+    },
+    {
+      "id": "P0005",
+      "name": "Roberto Mendes",
+      "preferred_name": "Roberto",
+      "document": { "type": "RG", "number": "GO-000003" },
+      "birthdate": "1978-11-18",
+      "gender": "male",
+      "profession": "motorista",
+      "address": {
+        "street": "Rua Goiás",
+        "number": "200",
+        "complement": "Ap 21",
+        "neighborhood": "Setor Central",
+        "city": "Goiânia",
+        "state": "GO",
+        "postal_code": "74000-000"
+      },
+      "contacts": {
+        "phone": "+55 62 93333-3333",
+        "email": "roberto@example.com",
+        "preferred_channel": "whatsapp"
+      },
+      "coordinates": { "latitude": -16.6875, "longitude": -49.2640 },
+      "vulnerability_flags": {
+        "elderly": false,
+        "single_parent": false,
+        "low_income": false
+      },
+      "tags": ["responsavel"]
+    },
+    {
+      "id": "P0006",
+      "name": "Julia Mendes",
+      "preferred_name": "Julia",
+      "document": { "type": "RM", "number": "ST-000003" },
+      "birthdate": "2010-12-01",
+      "gender": "female",
+      "profession": "estudante",
+      "address": {
+        "street": "Rua Goiás",
+        "number": "200",
+        "complement": "Ap 21",
+        "neighborhood": "Setor Central",
+        "city": "Goiânia",
+        "state": "GO",
+        "postal_code": "74000-000"
+      },
+      "contacts": {
+        "phone": "+55 62 94444-4444",
+        "email": "julia@example.com",
+        "preferred_channel": "whatsapp"
+      },
+      "coordinates": { "latitude": -16.6865, "longitude": -49.2650 },
+      "vulnerability_flags": {
+        "elderly": false,
+        "single_parent": false,
+        "low_income": false
+      },
+      "tags": ["student"]
+    }
+  ]
+}
