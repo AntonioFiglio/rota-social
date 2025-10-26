@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import clsx from "clsx";
+import logoImage from "../assets/logo.png";
 
 import { useVolunteerStore } from "../store/useVolunteer";
 
@@ -27,15 +28,17 @@ const Layout = ({ children }: PropsWithChildren) => {
           {/* Left section - Brand and volunteer info */}
           <div className="space-y-3">
             {/* Clean brand title */}
+                 <div className="relative overflow-hidden rounded-xl border-0 border-slate-700/60 bg-slate-900/80 p-3 shadow-lg shadow-slate-900/40">
             <div className="flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-500">
-                <span className="text-sm font-medium text-white">P</span>
-              </div>
-              <h1 className="text-xl font-semibold text-neutral-900">
-                Portal do Voluntário
-              </h1>
+              <img
+                src={logoImage}
+                alt="RotaSocial Logo"
+                className="h-8 w-8 drop-shadow-lg"
+              />
+              <h1 className="text-2xl font-semibold text-slate-100">RotaSocial</h1>
             </div>
-            
+          </div>
+
             {/* Clean volunteer info */}
             {volunteer ? (
               <div className="space-y-1">
@@ -66,7 +69,7 @@ const Layout = ({ children }: PropsWithChildren) => {
               </p>
             )}
           </div>
-          
+
           {/* Right section - Navigation and actions */}
           <div className="flex items-center gap-4">
             {/* Clean navigation */}
@@ -88,7 +91,7 @@ const Layout = ({ children }: PropsWithChildren) => {
                 </NavLink>
               ))}
             </nav>
-            
+
             {/* Clean action button */}
             <button
               type="button"

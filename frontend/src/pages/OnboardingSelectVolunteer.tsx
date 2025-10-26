@@ -70,7 +70,7 @@ const OnboardingSelectVolunteer = () => {
     <div className="mx-auto flex min-h-screen max-w-4xl flex-col justify-center gap-6 px-6 py-16">
       <header className="space-y-2 text-center">
         <h1 className="text-3xl font-semibold text-primary-500">
-          Bem-vindo(a) ao Portal do Voluntário
+          Bem-vindo(a) ao Rota Social
         </h1>
         <p className="text-sm text-neutral-600">
           Escolha seu perfil para carregar a agenda da sua zona e acessar as

@@ -31,7 +31,6 @@ export type DeckItem = {
 
 type MatchDeckProps = {
   current: DeckItem | null;
-  nextItems: DeckItem[];
   insight?: CardInsight;
   canHelp: boolean;
   onHelp: () => Promise<boolean>;
@@ -43,7 +42,6 @@ const swipeThreshold = 80;
 
 const MatchDeck = ({
   current,
-  nextItems,
   insight,
   canHelp,
   onHelp,
@@ -57,15 +55,9 @@ const MatchDeck = ({
   const [isAnimating, setIsAnimating] = useState(false);
 
   const trackedIds = useMemo(() => {
-    const ids: string[] = [];
-    if (current) {
-      ids.push(current.student.id);
-    }
-    nextItems.forEach((item) => {
-      ids.push(item.student.id);
-    });
-    return ids;
-  }, [current, nextItems]);
+    if (!current) return [];
+    return [current.student.id];
+  }, [current]);
 
   const namesMap = useStudentNames(trackedIds);
 
@@ -111,11 +103,11 @@ const MatchDeck = ({
 
   if (!current) {
     return (
-      <div className="flex h-[440px] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-2xl border border-dashed border-neutral-300 bg-white/70 p-6 text-center text-neutral-600 shadow-inner">
-        <p className="text-lg font-semibold text-neutral-900">
+      <div className="flex h-[440px] w-full max-w-sm flex-col items-center justify-center gap-4 rounded-2xl border border-dashed border-slate-600 bg-slate-800/80 p-6 text-center text-slate-300 shadow-inner">
+        <p className="text-lg font-semibold text-slate-100">
           Tudo em dia! ✅
         </p>
-        <p className="text-sm">
+        <p className="text-sm text-slate-400">
           Nenhuma sugestão pendente. Toque em &ldquo;Atualizar&rdquo; para buscar novos
           casos ou aguarde notificações.
         </p>
@@ -125,31 +117,6 @@ const MatchDeck = ({
 
   return (
     <div className="relative flex w-full max-w-sm justify-center">
-      {nextItems.map((item, index) => (
-        <div
-          key={item.student.id}
-          className="pointer-events-none absolute inset-x-6 top-6 mx-auto scale-95 opacity-50"
-          style={{
-            transform: `translateY(${(index + 1) * 18}px) scale(${
-              1 - (index + 1) * 0.06
-            })`,
-          }}
-          >
-            <MatchCard
-              student={item.student}
-              studentName={
-                namesMap[item.student.id] ?? STUDENT_NAME_PLACEHOLDER
-              }
-              family={item.family}
-              suggestion={item.suggestion}
-              distanceKm={item.distanceKm}
-              canHelp={false}
-              onHelp={() => {}}
-            onSkip={() => {}}
-            onSeeMore={() => onDetails(item)}
-          />
-        </div>
-      ))}
 
       <motion.div
         key={current.student.id}

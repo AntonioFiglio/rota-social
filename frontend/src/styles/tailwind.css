@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 html,
@@ -13,10 +13,69 @@ body,
 }
 
 body {
-  @apply bg-neutral-100 text-neutral-900;
+  @apply bg-slate-950 text-slate-100;
   font-feature-settings: "liga";
 }
 
 a {
   @apply text-primary-500 underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+}
+
+@layer base {
+  .bg-white,
+  .bg-neutral-50,
+  .bg-neutral-100,
+  .bg-neutral-200 {
+    @apply bg-slate-900 !important;
+  }
+
+  .bg-white\/95 {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+  }
+
+  .bg-white\/90 {
+    background-color: rgba(15, 23, 42, 0.9) !important;
+  }
+
+  .bg-white\/80 {
+    background-color: rgba(15, 23, 42, 0.8) !important;
+  }
+
+  .bg-white\/70 {
+    background-color: rgba(15, 23, 42, 0.7) !important;
+  }
+
+  .border-neutral-100,
+  .border-neutral-200,
+  .border-neutral-300 {
+    border-color: #1f2937 !important;
+  }
+
+  .text-neutral-900 {
+    color: #f8fafc !important;
+  }
+
+  .text-neutral-800 {
+    color: #e2e8f0 !important;
+  }
+
+  .text-neutral-700 {
+    color: #cbd5f5 !important;
+  }
+
+  .text-neutral-600 {
+    color: #9ca3c7 !important;
+  }
+
+  .text-neutral-500 {
+    color: #94a3b8 !important;
+  }
+
+  .text-neutral-400 {
+    color: #64748b !important;
+  }
+
+  .text-neutral-300 {
+    color: #475569 !important;
+  }
 }

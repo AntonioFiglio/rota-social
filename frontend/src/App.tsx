@@ -9,7 +9,7 @@ const App = () => {
       fallback={
         <div className="flex min-h-screen items-center justify-center bg-neutral-100 text-neutral-900">
           <span className="animate-pulse text-lg font-semibold">
-            Carregando Portal do Voluntário...
+            Carregando Rota Social...
           </span>
         </div>
       }

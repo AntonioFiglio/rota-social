@@ -1,15 +1,22 @@
 # Impacto Social – Guia de Execução Rápida
 
-Este repositório reúne **backend (FastAPI)** e **frontend (React + Vite)** usados na POC do hackathon.  
+Este repositório reúne **backend (FastAPI)** e **frontend (React + Vite)** usados na POC do hackathon.
 O objetivo deste documento é facilitar a execução local e lembrar das entregas obrigatórias.
 
 ---
+
+
+![Diagrama da Aplicação](./diagrama.png)
+
+## 🎥 Demo
+
+[Assista à demonstração do projeto](./demo.mp4)
 
 ## 📁 Estrutura
 
 ```
 Backend/   # API FastAPI (mock + seeds em JSON)
-frontend/  # Portal do Voluntário (React/Vite)
+frontend/  # Rota Social (React/Vite)
 ```
 
 ---
@@ -33,10 +40,10 @@ uvicorn app.main:app --reload
 python -m app.seed_data --force
 ```
 
-> Os arquivos ficam em `Backend/data/*.json`.  
+> Os arquivos ficam em `Backend/data/*.json`.
 > Variáveis úteis: `OPENAI_API_KEY` (opcional), `OPENAI_MODEL` (`gpt-4o-mini` por padrão).
 
-### 2. Frontend (Portal do Voluntário)
+### 2. Frontend (Rota Social)
 
 ```bash
 cd frontend
@@ -49,8 +56,8 @@ npm run dev
 
 ### 3. Fluxo recomendado (dois terminais)
 
-1. **Terminal A**: subir o backend (`uvicorn app.main:app --reload`).  
-2. **Terminal B**: subir o frontend (`npm run dev`).  
+1. **Terminal A**: subir o backend (`uvicorn app.main:app --reload`).
+2. **Terminal B**: subir o frontend (`npm run dev`).
 
 O frontend consome diretamente as rotas mock da API (sem passos adicionais).
 

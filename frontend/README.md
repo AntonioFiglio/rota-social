@@ -1,4 +1,4 @@
-# Portal do Voluntário (Frontend)
+# Rota Social (Frontend)
 
 Interface React + Vite dedicada ao voluntário para consumir o backend FastAPI do projeto impacto social.
 

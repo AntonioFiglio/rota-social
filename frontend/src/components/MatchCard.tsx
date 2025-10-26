@@ -30,18 +30,18 @@ const severityStyles: Record<
   { bg: string; text: string; label: string }
 > = {
   high: {
-    bg: "bg-warning-500/20",
-    text: "text-warning-700",
+    bg: "bg-amber-200/80",
+    text: "text-amber-900",
     label: "Severidade Alta",
   },
   medium: {
-    bg: "bg-primary-500/10",
-    text: "text-primary-600",
+    bg: "bg-blue-200/80",
+    text: "text-blue-900",
     label: "Severidade Média",
   },
   low: {
-    bg: "bg-neutral-200",
-    text: "text-neutral-800",
+    bg: "bg-slate-200",
+    text: "text-slate-800",
     label: "Severidade Baixa",
   },
 };
@@ -100,16 +100,14 @@ const MatchCardComponent = ({
     : undefined;
 
   return (
-    <article className="group w-full max-w-sm rounded-2xl bg-white p-4 text-neutral-900 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
+    <article className="w-full max-w-sm rounded-3xl border border-slate-300 bg-slate-100 p-5 text-slate-900 shadow-xl shadow-slate-900/15">
       <header className="flex items-center gap-3">
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-500/10 text-sm font-bold text-primary-500">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-500/20 text-sm font-bold text-primary-700 shadow-inner">
           {getInitials(studentName)}
         </div>
         <div className="flex-1 text-left">
-          <h2 className="text-lg font-semibold text-neutral-900">
-            {studentName}
-          </h2>
-          <p className="text-xs text-neutral-600">
+          <h2 className="text-lg font-semibold">{studentName}</h2>
+          <p className="text-xs text-slate-600">
             {student.school.school_name} • {student.zone} •{" "}
             {distanceKm != null
               ? `${distanceKm.toFixed(1)} km de você`
@@ -118,7 +116,7 @@ const MatchCardComponent = ({
         </div>
         <span
           className={clsx(
-            "text-xs font-semibold px-2 py-1 rounded-full",
+            "rounded-full px-2 py-1 text-xs font-semibold uppercase tracking-wide",
             severityStyle.bg,
             severityStyle.text,
           )}
@@ -128,12 +126,12 @@ const MatchCardComponent = ({
       </header>
 
       <section className="mt-3 space-y-2 text-left">
-        <p className="text-sm text-neutral-800">
+        <p className="text-sm text-slate-800">
           <span className="font-medium">💡 Insight:</span>{" "}
           {insight?.text ?? "Gerando insight respeitoso..."}
         </p>
         {insight?.source && (
-          <p className="text-[11px] uppercase tracking-wide text-neutral-500">
+          <p className="text-[11px] uppercase tracking-wide text-slate-500">
             Fonte: {insight.source}
           </p>
         )}
@@ -143,13 +141,13 @@ const MatchCardComponent = ({
         {suggestion.tags.slice(0, 5).map((tag) => (
           <span
             key={tag}
-            className="rounded-full bg-primary-500/10 px-2 py-1 text-[11px] font-medium text-primary-600"
+            className="rounded-full bg-primary-500/15 px-2 py-1 text-[11px] font-medium text-primary-700"
           >
             #{tag}
           </span>
         ))}
         {accessibilityTag && (
-          <span className="rounded-full bg-warning-500/20 px-2 py-1 text-[11px] font-medium text-warning-700">
+          <span className="rounded-full bg-amber-200/80 px-2 py-1 text-[11px] font-medium text-amber-900">
             ♿ {accessibilityTag}
           </span>
         )}
@@ -162,19 +160,19 @@ const MatchCardComponent = ({
             className={clsx(
               "flex items-center justify-center rounded-lg px-2 py-2 font-medium",
               chip.active
-                ? "bg-success-500/15 text-success-700"
-                : "bg-neutral-200 text-neutral-700",
+                ? "bg-emerald-200/70 text-emerald-900"
+                : "bg-slate-200 text-slate-700",
             )}
           >
             {chip.label} {chip.active ? "✔" : "—"}
           </span>
         ))}
-        <span className="col-span-3 rounded-lg bg-neutral-100 px-3 py-2 text-neutral-700">
+        <span className="col-span-3 rounded-lg bg-slate-200 px-3 py-2 text-slate-700">
           {suggestion.reason}
         </span>
       </section>
 
-      <section className="mt-3 space-y-1 text-left text-sm text-neutral-700">
+      <section className="mt-3 space-y-1 text-left text-sm text-slate-700">
         <p>
           <span className="font-medium">Score:</span> {suggestion.score}
         </p>
@@ -185,7 +183,7 @@ const MatchCardComponent = ({
         <button
           type="button"
           onClick={onSkip}
-          className="col-span-1 rounded-xl border border-warning-500/60 py-1.5 px-2 font-semibold text-warning-700 transition hover:border-warning-500 hover:text-warning-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-warning-500 focus-visible:ring-offset-2"
+          className="col-span-1 rounded-xl border border-amber-400/70 py-1.5 px-2 font-semibold text-amber-800 transition hover:border-amber-500 hover:text-amber-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
         >
           ❌ Pular
         </button>
@@ -193,52 +191,21 @@ const MatchCardComponent = ({
           type="button"
           onClick={onHelp}
           disabled={!canHelp}
-          className="group col-span-2 relative overflow-hidden rounded-xl bg-gradient-to-r from-success-500 via-success-600 to-emerald-500 py-2 px-3 font-bold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-success-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-success-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:shadow-none disabled:hover:scale-100"
+          className="col-span-2 rounded-xl bg-primary-500 py-2 px-3 font-semibold text-white shadow-md transition hover:bg-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:bg-slate-400"
         >
-          {/* Background gradient animation */}
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-green-500 to-success-600 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-disabled:opacity-0"></div>
-          
-          {/* Shimmer effect */}
-          <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full group-disabled:translate-x-0"></div>
-          
-          {/* Particle effects */}
-          <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none group-disabled:opacity-0">
-            <div className="absolute top-1/4 left-1/4 w-1.5 h-1.5 bg-white rounded-full animate-ping shadow-sm" style={{animationDelay: '0ms', animationDuration: '1.4s'}}></div>
-            <div className="absolute top-3/4 left-1/2 w-1 h-1 bg-emerald-200 rounded-full animate-ping" style={{animationDelay: '200ms', animationDuration: '1.7s'}}></div>
-            <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-green-200 rounded-full animate-ping shadow-sm" style={{animationDelay: '400ms', animationDuration: '1.2s'}}></div>
-            <div className="absolute bottom-1/4 left-3/4 w-1 h-1 bg-success-200 rounded-full animate-ping" style={{animationDelay: '600ms', animationDuration: '1.5s'}}></div>
-            <div className="absolute top-1/6 right-1/6 w-0.5 h-0.5 bg-white rounded-full animate-pulse opacity-80" style={{animationDelay: '300ms', animationDuration: '2s'}}></div>
-            <div className="absolute bottom-1/6 left-1/6 w-0.5 h-0.5 bg-emerald-100 rounded-full animate-pulse opacity-70" style={{animationDelay: '700ms', animationDuration: '2.3s'}}></div>
-          </div>
-          
-          {/* Glow effect */}
-          <div className="absolute inset-0 rounded-xl bg-success-400 opacity-0 blur-md transition-opacity duration-500 group-hover:opacity-40 -z-10 group-disabled:opacity-0"></div>
-          
-          {/* Pulsing heart effect */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-20 transition-opacity duration-300 group-disabled:opacity-0">
-            <div className="text-4xl animate-pulse">💚</div>
-          </div>
-          
-          {/* Button content */}
-          <span className="relative z-10 flex items-center justify-center gap-2 transition-all duration-300 group-hover:scale-110 group-disabled:scale-100">
-            <span className="text-lg transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12 group-disabled:scale-100 group-disabled:rotate-0">💚</span>
-            <span className="font-bold tracking-wide">Ajudar</span>
-          </span>
-          
-          {/* Success ripple effect */}
-          <div className="absolute inset-0 rounded-xl border-2 border-white/30 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 group-disabled:opacity-0"></div>
+          💚 Ajudar
         </button>
       </footer>
 
       <button
         type="button"
         onClick={onSeeMore}
-        className="mt-2 w-full text-sm font-semibold text-primary-500 underline transition hover:text-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+        className="mt-3 w-full text-sm font-semibold text-primary-600 underline transition hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
       >
         ℹ️ Ver mais
       </button>
 
-      <p className="mt-3 text-center text-[11px] uppercase tracking-wide text-neutral-400">
+      <p className="mt-3 text-center text-[11px] uppercase tracking-wide text-slate-500">
         POC — dados sintéticos
       </p>
     </article>
