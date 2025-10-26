@@ -185,7 +185,7 @@ const MatchCardComponent = ({
         <button
           type="button"
           onClick={onSkip}
-          className="col-span-1 rounded-xl border border-warning-500/60 py-2 font-semibold text-warning-700 transition hover:border-warning-500 hover:text-warning-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-warning-500 focus-visible:ring-offset-2"
+          className="col-span-1 rounded-xl border border-warning-500/60 py-1.5 px-2 font-semibold text-warning-700 transition hover:border-warning-500 hover:text-warning-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-warning-500 focus-visible:ring-offset-2"
         >
           ❌ Pular
         </button>
@@ -193,9 +193,40 @@ const MatchCardComponent = ({
           type="button"
           onClick={onHelp}
           disabled={!canHelp}
-          className="col-span-2 rounded-xl bg-success-500 py-2 font-semibold text-white transition hover:bg-success-500/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-success-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:bg-neutral-300"
+          className="group col-span-2 relative overflow-hidden rounded-xl bg-gradient-to-r from-success-500 via-success-600 to-emerald-500 py-2 px-3 font-bold text-white shadow-lg transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-success-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-success-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:shadow-none disabled:hover:scale-100"
         >
-          💚 Ajudar
+          {/* Background gradient animation */}
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-green-500 to-success-600 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-disabled:opacity-0"></div>
+          
+          {/* Shimmer effect */}
+          <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full group-disabled:translate-x-0"></div>
+          
+          {/* Particle effects */}
+          <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none group-disabled:opacity-0">
+            <div className="absolute top-1/4 left-1/4 w-1.5 h-1.5 bg-white rounded-full animate-ping shadow-sm" style={{animationDelay: '0ms', animationDuration: '1.4s'}}></div>
+            <div className="absolute top-3/4 left-1/2 w-1 h-1 bg-emerald-200 rounded-full animate-ping" style={{animationDelay: '200ms', animationDuration: '1.7s'}}></div>
+            <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-green-200 rounded-full animate-ping shadow-sm" style={{animationDelay: '400ms', animationDuration: '1.2s'}}></div>
+            <div className="absolute bottom-1/4 left-3/4 w-1 h-1 bg-success-200 rounded-full animate-ping" style={{animationDelay: '600ms', animationDuration: '1.5s'}}></div>
+            <div className="absolute top-1/6 right-1/6 w-0.5 h-0.5 bg-white rounded-full animate-pulse opacity-80" style={{animationDelay: '300ms', animationDuration: '2s'}}></div>
+            <div className="absolute bottom-1/6 left-1/6 w-0.5 h-0.5 bg-emerald-100 rounded-full animate-pulse opacity-70" style={{animationDelay: '700ms', animationDuration: '2.3s'}}></div>
+          </div>
+          
+          {/* Glow effect */}
+          <div className="absolute inset-0 rounded-xl bg-success-400 opacity-0 blur-md transition-opacity duration-500 group-hover:opacity-40 -z-10 group-disabled:opacity-0"></div>
+          
+          {/* Pulsing heart effect */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-20 transition-opacity duration-300 group-disabled:opacity-0">
+            <div className="text-4xl animate-pulse">💚</div>
+          </div>
+          
+          {/* Button content */}
+          <span className="relative z-10 flex items-center justify-center gap-2 transition-all duration-300 group-hover:scale-110 group-disabled:scale-100">
+            <span className="text-lg transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12 group-disabled:scale-100 group-disabled:rotate-0">💚</span>
+            <span className="font-bold tracking-wide">Ajudar</span>
+          </span>
+          
+          {/* Success ripple effect */}
+          <div className="absolute inset-0 rounded-xl border-2 border-white/30 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 group-disabled:opacity-0"></div>
         </button>
       </footer>
 

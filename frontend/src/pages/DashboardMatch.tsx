@@ -33,6 +33,7 @@ import MatchDeck, { DeckItem } from "../components/MatchDeck";
 import CapacityBar from "../components/CapacityBar";
 import FamilyQuickView from "../components/FamilyQuickView";
 import type { StudentProfile } from "../types/models";
+import logoImage from "../assets/logo.png";
 
 const DashboardMatch: React.FC = () => {
   const volunteer = useVolunteerStore((s) => s.volunteer);
@@ -364,44 +365,56 @@ const DashboardMatch: React.FC = () => {
   return (
     <div className="flex h-[100dvh] flex-col bg-neutral-50">
       <header className="flex items-center justify-between border-b border-neutral-200 bg-white px-4 py-3">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
+          {/* Enhanced Logo Component */}
+          <div className="group cursor-pointer relative overflow-hidden rounded-xl p-3 transition-all duration-500 hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:shadow-xl hover:shadow-blue-200/40">
+            <div className="flex items-center gap-3 relative z-10">
+              <div className="relative">
+                <img 
+                  src={logoImage} 
+                  alt="RotaSocial Logo" 
+                  className="h-8 w-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 drop-shadow-lg group-hover:drop-shadow-2xl filter group-hover:brightness-110 group-hover:saturate-150"
+                />
+                {/* Multi-layered glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 rounded-full opacity-0 group-hover:opacity-40 transition-all duration-700 blur-lg scale-150"></div>
+                <div className="absolute inset-0 bg-blue-300 rounded-full opacity-0 group-hover:opacity-20 transition-all duration-500 blur-sm scale-125"></div>
+              </div>
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent transition-all duration-700 group-hover:scale-115 group-hover:from-blue-500 group-hover:via-indigo-500 group-hover:to-purple-500 drop-shadow-sm group-hover:drop-shadow-md">
+                RotaSocial
+              </h1>
+            </div>
+            
+            {/* Advanced particle system */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none overflow-hidden rounded-xl">
+              {/* Primary particles */}
+              <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full animate-ping shadow-xl" style={{animationDelay: '0ms', animationDuration: '1.8s'}}></div>
+              <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-gradient-to-r from-indigo-400 to-indigo-500 rounded-full animate-ping shadow-lg" style={{animationDelay: '300ms', animationDuration: '2.1s'}}></div>
+              <div className="absolute top-3/4 left-2/3 w-1.5 h-1.5 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full animate-ping shadow-md" style={{animationDelay: '600ms', animationDuration: '1.5s'}}></div>
+              <div className="absolute top-1/3 right-1/4 w-2.5 h-2.5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full animate-ping shadow-lg" style={{animationDelay: '900ms', animationDuration: '1.9s'}}></div>
+              <div className="absolute bottom-1/3 left-1/4 w-1.5 h-1.5 bg-gradient-to-r from-blue-300 to-indigo-400 rounded-full animate-ping shadow-sm" style={{animationDelay: '1200ms', animationDuration: '1.7s'}}></div>
+              <div className="absolute top-2/3 right-1/3 w-1 h-1 bg-gradient-to-r from-indigo-300 to-purple-400 rounded-full animate-ping" style={{animationDelay: '1500ms', animationDuration: '1.3s'}}></div>
+              
+              {/* Floating sparkles */}
+              <div className="absolute top-1/6 left-1/6 w-1.5 h-1.5 bg-yellow-300 rounded-full animate-pulse opacity-80 shadow-sm" style={{animationDelay: '400ms', animationDuration: '2.5s'}}></div>
+              <div className="absolute bottom-1/6 right-1/6 w-1 h-1 bg-yellow-200 rounded-full animate-pulse opacity-70" style={{animationDelay: '800ms', animationDuration: '3s'}}></div>
+              <div className="absolute top-1/2 right-1/6 w-0.5 h-0.5 bg-white rounded-full animate-pulse opacity-90" style={{animationDelay: '1100ms', animationDuration: '2.2s'}}></div>
+              
+              {/* Expanding ripples */}
+              <div className="absolute top-1/2 left-1/2 w-20 h-20 border-2 border-blue-300 rounded-full opacity-0 group-hover:opacity-30 group-hover:scale-150 transition-all duration-1200 -translate-x-1/2 -translate-y-1/2"></div>
+              <div className="absolute top-1/2 left-1/2 w-24 h-24 border border-indigo-200 rounded-full opacity-0 group-hover:opacity-20 group-hover:scale-200 transition-all duration-1800 -translate-x-1/2 -translate-y-1/2" style={{transitionDelay: '300ms'}}></div>
+              <div className="absolute top-1/2 left-1/2 w-28 h-28 border border-purple-100 rounded-full opacity-0 group-hover:opacity-10 group-hover:scale-250 transition-all duration-2200 -translate-x-1/2 -translate-y-1/2" style={{transitionDelay: '600ms'}}></div>
+            </div>
+          </div>
+          
+          <div className="h-8 w-px bg-neutral-200" />
           <div>
             <p className="text-xs text-neutral-500">Olá,</p>
-            <h1 className="text-lg font-semibold text-neutral-900">
+            <h2 className="text-lg font-semibold text-neutral-900">
               {volunteer.name}
-            </h1>
-          </div>
-          <div className="h-6 w-px bg-neutral-200" />
-          <div className="flex items-baseline gap-1.5 text-sm font-medium text-neutral-600">
-            <span>Capacidade:</span>
-            <span className="text-primary-600">
-              {activeCount}/{volunteer.max_students}
-            </span>
+            </h2>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={() => syncMutation.mutate()}
-            className="rounded-md px-3 py-2 text-xs font-semibold text-neutral-600 transition hover:bg-primary-50 hover:text-primary-600"
-          >
-            {syncMutation.isPending ? "Sincronizando..." : "Sincronizar"}
-          </button>
-          <button
-            type="button"
-            onClick={() => assignMutation.mutate()}
-            className="rounded-md px-3 py-2 text-xs font-semibold text-neutral-600 transition hover:bg-primary-50 hover:text-primary-600"
-          >
-            Reatribuir
-          </button>
-          <button
-            type="button"
-            onClick={() => navigate("/cases")}
-            className="rounded-md bg-primary-600 px-4 py-2 text-xs font-semibold text-white transition hover:bg-primary-700"
-          >
-            Meus Chamados
-          </button>
-        </div>
+
       </header>
 
       <main className="flex flex-1 flex-col items-center justify-center gap-8 px-4">
