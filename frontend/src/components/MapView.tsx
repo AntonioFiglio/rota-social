@@ -18,6 +18,10 @@ import type {
 import haversineKm from "../lib/distance";
 import MapLegend from "./MapLegend";
 import MapControls from "./MapControls";
+import {
+  STUDENT_NAME_PLACEHOLDER,
+  useStudentNames,
+} from "../store/useStudentDirectory";
 
 type MapViewProps = {
   volunteer: VolunteerProfile;
@@ -111,6 +115,15 @@ const MapView = ({
     [studentsAssigned],
   );
 
+  const allStudentIds = useMemo(() => {
+    const ids: string[] = [];
+    studentsSuggested.forEach((student) => ids.push(student.id));
+    studentsAssigned.forEach((item) => ids.push(item.student.id));
+    return ids;
+  }, [studentsAssigned, studentsSuggested]);
+
+  const studentNamesMap = useStudentNames(allStudentIds);
+
   const bounds = useMemo(() => {
     const latLngs: LatLngExpression[] = [];
     if (volunteerPosition) latLngs.push(volunteerPosition);
@@ -151,7 +164,7 @@ const MapView = ({
             <Popup>
               <div className="text-sm">
                 <p className="font-semibold text-neutral-900">
-                  {marker.student.id}
+                  {studentNamesMap[marker.student.id] ?? STUDENT_NAME_PLACEHOLDER}
                 </p>
                 <p className="text-neutral-600">
                   {marker.student.school.school_name}
@@ -176,7 +189,7 @@ const MapView = ({
             <Popup>
               <div className="text-sm">
                 <p className="font-semibold text-neutral-900">
-                  {marker.student.id}
+                  {studentNamesMap[marker.student.id] ?? STUDENT_NAME_PLACEHOLDER}
                 </p>
                 <p className="text-neutral-600">
                   {marker.assignment?.distance_km

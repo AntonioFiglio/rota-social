@@ -4,6 +4,7 @@ import type {
   NetworkResponse,
   StudentProfile,
 } from "../types/models";
+import { useStudentName } from "../store/useStudentDirectory";
 
 type FamilyQuickViewProps = {
   student: StudentProfile;
@@ -43,6 +44,7 @@ const FamilyQuickView = ({
 }: FamilyQuickViewProps) => {
   const services = family?.external_services;
   const eligibility = family?.eligibility_signals ?? [];
+  const studentName = useStudentName(student.id);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-900/70 p-4">
@@ -52,7 +54,9 @@ const FamilyQuickView = ({
             <p className="text-xs uppercase tracking-wide text-primary-500">
               Detalhes do estudante
             </p>
-            <h2 className="text-xl font-semibold text-neutral-900">{student.id}</h2>
+            <h2 className="text-xl font-semibold text-neutral-900">
+              {studentName}
+            </h2>
             <p className="text-xs text-neutral-600">
               {student.school.school_name} • {student.zone} • {distanceKm ? `${distanceKm.toFixed(1)} km` : "distância em avaliação"}
             </p>

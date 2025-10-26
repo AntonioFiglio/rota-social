@@ -1,6 +1,6 @@
 {
   "zones": {
-    "Sao Paulo": {
+    "São Paulo": {
       "lat": -23.5505,
       "lon": -46.6333
     },
@@ -8,9 +8,89 @@
       "lat": -20.5386,
       "lon": -47.4009
     },
-    "Goiania": {
+    "Goiânia": {
       "lat": -16.6869,
       "lon": -49.2648
+    },
+    "Campinas": {
+      "lat": -22.9056,
+      "lon": -47.0608
+    },
+    "Rio de Janeiro": {
+      "lat": -22.9068,
+      "lon": -43.1729
+    },
+    "Belo Horizonte": {
+      "lat": -19.9167,
+      "lon": -43.9345
+    },
+    "Curitiba": {
+      "lat": -25.4284,
+      "lon": -49.2733
+    },
+    "Porto Alegre": {
+      "lat": -30.0346,
+      "lon": -51.2177
+    },
+    "Recife": {
+      "lat": -8.0476,
+      "lon": -34.877
+    },
+    "Salvador": {
+      "lat": -12.9777,
+      "lon": -38.5016
+    },
+    "Fortaleza": {
+      "lat": -3.7319,
+      "lon": -38.5267
+    },
+    "Brasília": {
+      "lat": -15.7939,
+      "lon": -47.8828
+    },
+    "Manaus": {
+      "lat": -3.119,
+      "lon": -60.0217
+    },
+    "Belém": {
+      "lat": -1.4558,
+      "lon": -48.4902
+    },
+    "Natal": {
+      "lat": -5.7945,
+      "lon": -35.211
+    },
+    "João Pessoa": {
+      "lat": -7.1153,
+      "lon": -34.8641
+    },
+    "Maceió": {
+      "lat": -9.6498,
+      "lon": -35.7089
+    },
+    "Aracaju": {
+      "lat": -10.9472,
+      "lon": -37.0731
+    },
+    "Santos": {
+      "lat": -23.9608,
+      "lon": -46.3336
+    },
+    "Sorocaba": {
+      "lat": -23.5015,
+      "lon": -47.4526
+    },
+    "Ribeirão Preto": {
+      "lat": -21.1775,
+      "lon": -47.8103
+    },
+    "São José dos Campos": {
+      "lat": -23.2237,
+      "lon": -45.9009
+    },
+    "Guarulhos": {
+      "lat": -23.4543,
+      "lon": -46.5333
     }
   }
 }

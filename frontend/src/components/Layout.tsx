@@ -16,6 +16,10 @@ const Layout = ({ children }: PropsWithChildren) => {
   const clearVolunteer = useVolunteerStore((state) => state.clear);
   const location = useLocation();
 
+  if (location.pathname.startsWith("/dashboard")) {
+    return <>{children ?? <Outlet />}</>;
+  }
+
   return (
     <div className="min-h-screen bg-neutral-100 text-neutral-900">
       <header className="border-b border-neutral-200 bg-white">

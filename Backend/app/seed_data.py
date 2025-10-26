@@ -1,4 +1,7 @@
-"""Geracao deterministica de seeds (>=3000 alunos) para os arquivos JSON."""
+# -*- coding: utf-8 -*-
+"""
+Geração determinística de sementes (>=3000 alunos) para os arquivos JSON.
+"""
 
 from __future__ import annotations
 
@@ -9,87 +12,108 @@ from pathlib import Path
 from random import Random
 from typing import Dict, List, Tuple
 
+from .constants import (
+    ELIGIBILITY_BAIXA_RENDA,
+    ELIGIBILITY_FAMILIA_MONOPARENTAL,
+    ELIGIBILITY_NECESSIDADE_MOBILIDADE,
+    ELIGIBILITY_RESPONSAVEL_IDOSO,
+)
+from .utils.names import (
+    generate_guardian_name,
+    generate_student_name,
+    generate_volunteer_name,
+)
+
 TOTAL_STUDENTS = 3000
 VOLUNTEERS_PER_ZONE = 120
 TIMESTAMP = datetime.utcnow().replace(tzinfo=timezone.utc, microsecond=0).isoformat()
 
+# Centros geográficos aproximados por zona
 ZONES: Dict[str, Dict[str, float]] = {
-    "Sao Paulo": {"lat": -23.5505, "lon": -46.6333},
+    "São Paulo": {"lat": -23.5505, "lon": -46.6333},
     "Franca": {"lat": -20.5386, "lon": -47.4009},
-    "Goiania": {"lat": -16.6869, "lon": -49.2648},
+    "Goiânia": {"lat": -16.6869, "lon": -49.2648},
+
+    # Zonas adicionais
+    "Campinas": {"lat": -22.9056, "lon": -47.0608},
+    "Rio de Janeiro": {"lat": -22.9068, "lon": -43.1729},
+    "Belo Horizonte": {"lat": -19.9167, "lon": -43.9345},
+    "Curitiba": {"lat": -25.4284, "lon": -49.2733},
+    "Porto Alegre": {"lat": -30.0346, "lon": -51.2177},
+    "Recife": {"lat": -8.0476, "lon": -34.8770},
+    "Salvador": {"lat": -12.9777, "lon": -38.5016},
+    "Fortaleza": {"lat": -3.7319, "lon": -38.5267},
+    "Brasília": {"lat": -15.7939, "lon": -47.8828},
+    "Manaus": {"lat": -3.1190, "lon": -60.0217},
+    "Belém": {"lat": -1.4558, "lon": -48.4902},
+    "Natal": {"lat": -5.7945, "lon": -35.2110},
+    "João Pessoa": {"lat": -7.1153, "lon": -34.8641},
+    "Maceió": {"lat": -9.6498, "lon": -35.7089},
+    "Aracaju": {"lat": -10.9472, "lon": -37.0731},
+    "Santos": {"lat": -23.9608, "lon": -46.3336},
+    "Sorocaba": {"lat": -23.5015, "lon": -47.4526},
+    "Ribeirão Preto": {"lat": -21.1775, "lon": -47.8103},
+    "São José dos Campos": {"lat": -23.2237, "lon": -45.9009},
+    "Guarulhos": {"lat": -23.4543, "lon": -46.5333},
 }
 
+# Metadados por zona (cidade/UF/CEP-base)
 ZONE_META = {
-    "Sao Paulo": {"city": "São Paulo", "state": "SP", "postal_code": "01000-000"},
+    "São Paulo": {"city": "São Paulo", "state": "SP", "postal_code": "01000-000"},
     "Franca": {"city": "Franca", "state": "SP", "postal_code": "14400-000"},
-    "Goiania": {"city": "Goiânia", "state": "GO", "postal_code": "74000-000"},
+    "Goiânia": {"city": "Goiânia", "state": "GO", "postal_code": "74000-000"},
+
+    "Campinas": {"city": "Campinas", "state": "SP", "postal_code": "13000-000"},
+    "Rio de Janeiro": {"city": "Rio de Janeiro", "state": "RJ", "postal_code": "20000-000"},
+    "Belo Horizonte": {"city": "Belo Horizonte", "state": "MG", "postal_code": "30100-000"},
+    "Curitiba": {"city": "Curitiba", "state": "PR", "postal_code": "80000-000"},
+    "Porto Alegre": {"city": "Porto Alegre", "state": "RS", "postal_code": "90000-000"},
+    "Recife": {"city": "Recife", "state": "PE", "postal_code": "50000-000"},
+    "Salvador": {"city": "Salvador", "state": "BA", "postal_code": "40000-000"},
+    "Fortaleza": {"city": "Fortaleza", "state": "CE", "postal_code": "60000-000"},
+    "Brasília": {"city": "Brasília", "state": "DF", "postal_code": "70000-000"},
+    "Manaus": {"city": "Manaus", "state": "AM", "postal_code": "69000-000"},
+    "Belém": {"city": "Belém", "state": "PA", "postal_code": "66000-000"},
+    "Natal": {"city": "Natal", "state": "RN", "postal_code": "59000-000"},
+    "João Pessoa": {"city": "João Pessoa", "state": "PB", "postal_code": "58000-000"},
+    "Maceió": {"city": "Maceió", "state": "AL", "postal_code": "57000-000"},
+    "Aracaju": {"city": "Aracaju", "state": "SE", "postal_code": "49000-000"},
+    "Santos": {"city": "Santos", "state": "SP", "postal_code": "11000-000"},
+    "Sorocaba": {"city": "Sorocaba", "state": "SP", "postal_code": "18000-000"},
+    "Ribeirão Preto": {"city": "Ribeirão Preto", "state": "SP", "postal_code": "14000-000"},
+    "São José dos Campos": {"city": "São José dos Campos", "state": "SP", "postal_code": "12200-000"},
+    "Guarulhos": {"city": "Guarulhos", "state": "SP", "postal_code": "07000-000"},
 }
 
+# Mapeamento de escolas por zona
 SCHOOL_MAP = {
-    "Sao Paulo": {"school_id": "ESC701", "school_name": "EE Zona Centro"},
+    "São Paulo": {"school_id": "ESC701", "school_name": "EE Zona Centro"},
     "Franca": {"school_id": "ESC702", "school_name": "EE Franca Norte"},
-    "Goiania": {"school_id": "ESC703", "school_name": "EM Goiânia Leste"},
+    "Goiânia": {"school_id": "ESC703", "school_name": "EM Goiânia Leste"},
+
+    "Campinas": {"school_id": "ESC704", "school_name": "EE Campinas Centro"},
+    "Rio de Janeiro": {"school_id": "ESC705", "school_name": "EM Rio Zona Sul"},
+    "Belo Horizonte": {"school_id": "ESC706", "school_name": "EE BH Pampulha"},
+    "Curitiba": {"school_id": "ESC707", "school_name": "EM Curitiba Centro"},
+    "Porto Alegre": {"school_id": "ESC708", "school_name": "EE Porto Alegre Norte"},
+    "Recife": {"school_id": "ESC709", "school_name": "EM Recife Boa Vista"},
+    "Salvador": {"school_id": "ESC710", "school_name": "EM Salvador Itapuã"},
+    "Fortaleza": {"school_id": "ESC711", "school_name": "EE Fortaleza Aldeota"},
+    "Brasília": {"school_id": "ESC712", "school_name": "CEM Brasília Asa Sul"},
+    "Manaus": {"school_id": "ESC713", "school_name": "EM Manaus Centro"},
+    "Belém": {"school_id": "ESC714", "school_name": "EE Belém Nazaré"},
+    "Natal": {"school_id": "ESC715", "school_name": "EM Natal Tirol"},
+    "João Pessoa": {"school_id": "ESC716", "school_name": "EE João Pessoa Tambiá"},
+    "Maceió": {"school_id": "ESC717", "school_name": "EM Maceió Pajuçara"},
+    "Aracaju": {"school_id": "ESC718", "school_name": "EE Aracaju Centro"},
+    "Santos": {"school_id": "ESC719", "school_name": "EM Santos Gonzaga"},
+    "Sorocaba": {"school_id": "ESC720", "school_name": "EE Sorocaba Campolim"},
+    "Ribeirão Preto": {"school_id": "ESC721", "school_name": "EE Ribeirão Preto Centro"},
+    "São José dos Campos": {"school_id": "ESC722", "school_name": "EM São José dos Campos Centro"},
+    "Guarulhos": {"school_id": "ESC723", "school_name": "EE Guarulhos Centro"},
 }
 
-STUDENT_NAMES = [
-    "Alex",
-    "Bianca",
-    "Caio",
-    "Daniela",
-    "Eduarda",
-    "Felipe",
-    "Gabriela",
-    "Henrique",
-    "Isabela",
-    "João",
-    "Karen",
-    "Larissa",
-    "Miguel",
-    "Natan",
-    "Olivia",
-    "Paulo",
-    "Rafaela",
-    "Sofia",
-    "Tiago",
-    "Vitória",
-]
-
-GUARDIAN_NAMES = [
-    "Ana",
-    "Bruno",
-    "Claudia",
-    "Diego",
-    "Eva",
-    "Fernando",
-    "Gisele",
-    "Heloisa",
-    "Igor",
-    "Janaina",
-    "Kleber",
-    "Larissa",
-    "Marcelo",
-    "Natalia",
-    "Otavio",
-    "Patricia",
-    "Renato",
-    "Silvia",
-    "Talita",
-    "Valter",
-]
-
-VOLUNTEER_NAMES = [
-    "Bruna Lima",
-    "Carlos Nunes",
-    "Renata Faria",
-    "Eduardo Prado",
-    "Fernanda Silva",
-    "Hugo Martins",
-    "Isis Carvalho",
-    "Lia Monteiro",
-    "Marcos Teixeira",
-    "Nina Barbosa",
-]
-
+# Pool de habilidades (já em PT-BR)
 SKILL_POOL = [
     "reforço português",
     "matemática básica",
@@ -99,20 +123,22 @@ SKILL_POOL = [
     "tecnologia",
 ]
 
+# Dias da semana e faixas de horário (conteúdos em PT-BR)
 WEEKDAY_OPTIONS = [
-    ["mon", "wed"],
-    ["tue", "thu"],
-    ["sat"],
-    ["mon", "thu", "sat"],
+    ["seg", "qua"],
+    ["ter", "qui"],
+    ["sab"],
+    ["seg", "qui", "sab"],
 ]
 
 TIME_SLOT_OPTIONS = [
-    ["morning"],
-    ["afternoon"],
-    ["evening"],
-    ["morning", "afternoon"],
+    ["manhã"],
+    ["tarde"],
+    ["noite"],
+    ["manhã", "tarde"],
 ]
 
+# Parâmetros gerais (mantidos em inglês para não quebrar consumidores)
 CONFIG: Dict[str, float] = {
     "max_students_default": 10,
     "max_radius_km": 8.0,
@@ -161,7 +187,7 @@ def _compose_services(family_id: str, zone: str) -> Tuple[dict, List[Tuple[str, 
         "bolsa_familia": {
             "registered": bolsa_beneficiary,
             "beneficiary": bolsa_beneficiary,
-            "status": "ativo" if bolsa_beneficiary else "avaliacao",
+            "status": "ativo" if bolsa_beneficiary else "avaliação",
             "last_update": TIMESTAMP,
         },
         "others": [
@@ -237,16 +263,19 @@ def _generate_seed() -> SeedData:
         student_person_id = _format_id("P", person_counter + 1)
         person_counter += 1
 
-        guardian_first = GUARDIAN_NAMES[(student_index - 1) % len(GUARDIAN_NAMES)]
-        student_first = STUDENT_NAMES[(student_index - 1) % len(STUDENT_NAMES)]
+        guardian_full, guardian_preferred, guardian_gender = generate_guardian_name(student_index)
+        student_full, student_preferred, student_gender = generate_student_name(student_index)
 
         guardian = {
             "id": guardian_id,
-            "name": f"{guardian_first} {zone}",
-            "preferred_name": guardian_first,
-            "document": {"type": "RG", "number": f"{zone[:2].upper()}-{guardian_id[1:]}"},
+            "name": guardian_full,
+            "preferred_name": guardian_preferred,
+            "document": {
+                "type": "RG",
+                "number": f"{ZONE_META[zone]['state']}-{guardian_id[1:]}",  # usa UF em vez de fatia do nome da zona
+            },
             "birthdate": _birthdate(1970, zone_progress),
-            "gender": "female" if guardian_first.endswith("a") else "male",
+            "gender": guardian_gender,
             "profession": "trabalhador autônomo",
             "address": {
                 "street": f"Rua {zone} {zone_progress}",
@@ -268,17 +297,20 @@ def _generate_seed() -> SeedData:
                 "single_parent": student_index % 3 == 0,
                 "low_income": True,
             },
-            "tags": ["responsavel", "seed"],
+            "tags": ["responsável", "semente"],
         }
         persons.append(guardian)
 
         student_person = {
             "id": student_person_id,
-            "name": f"{student_first} {zone}",
-            "preferred_name": student_first,
-            "document": {"type": "RM", "number": f"{zone[:2].upper()}-{student_person_id[1:]}"},
+            "name": student_full,
+            "preferred_name": student_preferred,
+            "document": {
+                "type": "RM",
+                "number": f"{ZONE_META[zone]['state']}-{student_person_id[1:]}",
+            },
             "birthdate": _birthdate(2010, zone_progress),
-            "gender": "female" if student_first.endswith("a") else "male",
+            "gender": student_gender,
             "profession": "estudante",
             "address": guardian["address"],
             "contacts": {
@@ -292,12 +324,20 @@ def _generate_seed() -> SeedData:
                 "single_parent": False,
                 "low_income": True,
             },
-            "tags": ["student", "seed"],
+            "tags": ["aluno", "semente"],
         }
         persons.append(student_person)
 
         family_id = _format_id("F", student_index)
         services_dict, cache_entries = _compose_services(family_id, zone)
+        eligibility_signals = {ELIGIBILITY_BAIXA_RENDA}
+        if guardian["vulnerability_flags"]["elderly"]:
+            eligibility_signals.add(ELIGIBILITY_RESPONSAVEL_IDOSO)
+        if guardian["vulnerability_flags"]["single_parent"]:
+            eligibility_signals.add(ELIGIBILITY_FAMILIA_MONOPARENTAL)
+        if student_index % 7 == 0:
+            eligibility_signals.add(ELIGIBILITY_NECESSIDADE_MOBILIDADE)
+
         family = {
             "id": family_id,
             "household": [
@@ -305,12 +345,12 @@ def _generate_seed() -> SeedData:
                 {"person_id": student_person_id, "role": "student"},
             ],
             "external_services": services_dict,
-            "eligibility_signals": ["low_income"] + (["mobilidade"] if student_index % 7 == 0 else []),
+            "eligibility_signals": sorted(eligibility_signals),
             "consent": {"family_granted": True, "updated_at": TIMESTAMP},
             "record_linkage": {
                 "inputs": ["SED", "SUS", "CadÚnico", "Bolsa Família"],
                 "confidence": round(min(0.99, 0.82 + (student_index % 15) / 100), 2),
-                "explanations": [f"Dados mock conciliados para a zona {zone} (seed)."],
+                "explanations": [f"Dados simulados conciliados para a zona {zone} (semente)."],
             },
             "warm_notes": f"Família {family_id} gerada para simulação na zona {zone}.",
         }
@@ -346,9 +386,9 @@ def _generate_seed() -> SeedData:
             },
             "attendance_last_30d": {"absences": (student_index % 4), "delays": (student_index % 3)},
             "disabilities": {"wheelchair_user": student_index % 10 == 0},
-            "warm_notes": f"Aluno seed gerado para a zona {zone}.",
+            "warm_notes": f"Aluno gerado para simulação na zona {zone}.",
             "coordinates": {"latitude": student_coord[0], "longitude": student_coord[1]},
-            "tags": ["seed", zone.lower()],
+            "tags": ["semente", zone.lower()],
         }
         students.append(student)
 
@@ -369,7 +409,7 @@ def _generate_seed() -> SeedData:
         base_lon = ZONES[zone]["lon"]
         for idx in range(1, VOLUNTEERS_PER_ZONE + 1):
             volunteer_counter += 1
-            name_seed = VOLUNTEER_NAMES[(volunteer_counter - 1) % len(VOLUNTEER_NAMES)]
+            volunteer_name = generate_volunteer_name(volunteer_counter)
             coord = _coordinate(base_lat, base_lon, rng)
             skills = [SKILL_POOL[(volunteer_counter - 1) % len(SKILL_POOL)]]
             secondary_skill = SKILL_POOL[(volunteer_counter + 2) % len(SKILL_POOL)]
@@ -385,7 +425,7 @@ def _generate_seed() -> SeedData:
 
             volunteer = {
                 "id": _format_id("V", volunteer_counter),
-                "name": name_seed,
+                "name": volunteer_name,
                 "zone": zone,
                 "address": {
                     "street": f"Av. {zone}",
@@ -409,10 +449,10 @@ def _generate_seed() -> SeedData:
                 "experience_years": volunteer_counter % 6,
                 "accessibility": {
                     "mobility_assistance": volunteer_counter % 3 == 0,
-                    "vehicle_type": "car" if volunteer_counter % 3 == 0 else "public_transport",
+                    "vehicle_type": "carro" if volunteer_counter % 3 == 0 else "transporte_público",
                 },
                 "verified": volunteer_counter % 2 == 0,
-                "warm_notes": f"Voluntário seed disponível para a zona {zone}.",
+                "warm_notes": f"Voluntário gerado para simulação na zona {zone}.",
                 "tags": ["tutor", zone.lower()],
             }
             volunteers.append(volunteer)
@@ -438,7 +478,7 @@ SERVICES: List[dict] = _seed_cache.services
 
 
 def write_seed_files(force: bool = False) -> None:
-    """Escreve os arquivos JSON de seed na pasta data/."""
+    """Escreve os arquivos JSON de semente na pasta data/."""
     base_dir = Path(__file__).resolve().parent.parent / "data"
     base_dir.mkdir(parents=True, exist_ok=True)
 
@@ -477,7 +517,7 @@ def write_seed_files(force: bool = False) -> None:
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Gera arquivos seed JSON grandes para o backend.")
+    parser = argparse.ArgumentParser(description="Gera arquivos de sementes (seed) JSON grandes para o backend.")
     parser.add_argument(
         "--force",
         action="store_true",
@@ -486,6 +526,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     write_seed_files(force=args.force)
     print(
-        "Seeds gerados com sucesso:",
+        "Sementes geradas com sucesso:",
         f"{len(PERSONS)} pessoas, {len(STUDENTS)} alunos, {len(VOLUNTEERS)} voluntários.",
     )

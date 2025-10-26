@@ -1,9 +1,11 @@
 import dayjs from "dayjs";
 
 import type { CaseItem, TimelineEvent } from "../store/useCases";
+import { STUDENT_NAME_PLACEHOLDER } from "../store/useStudentDirectory";
 
 type CaseTimelineProps = {
   caseItem?: CaseItem;
+  studentLabel?: string;
   onClose: () => void;
 };
 
@@ -20,10 +22,12 @@ const TimelineEventRow = ({ event }: { event: TimelineEvent }) => (
   </li>
 );
 
-const CaseTimeline = ({ caseItem, onClose }: CaseTimelineProps) => {
+const CaseTimeline = ({ caseItem, studentLabel, onClose }: CaseTimelineProps) => {
   if (!caseItem) {
     return null;
   }
+
+  const displayName = studentLabel || STUDENT_NAME_PLACEHOLDER;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-900/60 p-4">
@@ -31,7 +35,7 @@ const CaseTimeline = ({ caseItem, onClose }: CaseTimelineProps) => {
         <div className="flex items-start justify-between gap-4">
           <div>
             <h3 className="text-lg font-semibold text-neutral-900">
-              Timeline — {caseItem.studentId}
+              Timeline — {displayName}
             </h3>
             <p className="text-sm text-neutral-600">
               Status atual:{" "}

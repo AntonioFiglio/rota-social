@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
 
@@ -13,6 +13,7 @@ import {
 import { useVolunteerStore } from "../store/useVolunteer";
 import InsightCard from "../components/InsightCard";
 import FamilyCard from "../components/FamilyCard";
+import { useStudentName } from "../store/useStudentDirectory";
 
 const tabOptions = ["perfil", "familia", "rede"] as const;
 
@@ -37,6 +38,7 @@ const StudentDetails = () => {
   });
 
   const student = studentsQuery.data?.find((item) => item.id === id);
+  const studentName = useStudentName(id);
 
   const familyQuery = useQuery({
     queryKey: ["family", student?.family_id],
@@ -50,13 +52,37 @@ const StudentDetails = () => {
     enabled: Boolean(id),
   });
 
-  const studentInsightMutation = useMutation({
+  const {
+    mutate: requestStudentInsight,
+    data: studentInsight,
+  } = useMutation({
     mutationFn: (studentId: string) => generateStudentInsight(studentId),
   });
 
-  const familyInsightMutation = useMutation({
+  const {
+    mutate: requestFamilyInsight,
+    data: familyInsight,
+  } = useMutation({
     mutationFn: (familyId: string) => generateFamilyInsight(familyId),
   });
+
+  const studentInsightRequestedRef = useRef<string | undefined>();
+  const familyInsightRequestedRef = useRef<string | undefined>();
+
+  useEffect(() => {
+    if (!student?.id) return;
+    if (studentInsightRequestedRef.current === student.id) return;
+    studentInsightRequestedRef.current = student.id;
+    requestStudentInsight(student.id);
+  }, [student?.id, requestStudentInsight]);
+
+  useEffect(() => {
+    const familyId = familyQuery.data?.id;
+    if (!familyId) return;
+    if (familyInsightRequestedRef.current === familyId) return;
+    familyInsightRequestedRef.current = familyId;
+    requestFamilyInsight(familyId);
+  }, [familyQuery.data?.id, requestFamilyInsight]);
 
   const assignment = useMemo(
     () => assignmentsQuery.data?.find((item) => item.student_id === id),
@@ -84,7 +110,7 @@ const StudentDetails = () => {
     <div className="flex flex-col gap-6 pb-24">
       <header className="space-y-1">
         <h1 className="text-2xl font-semibold text-primary-500">
-          {student.id}
+          {studentName}
         </h1>
         <p className="text-sm text-neutral-600">
           Escola {student.school.school_name} • Turma {student.school.classroom} •
@@ -159,22 +185,6 @@ const StudentDetails = () => {
             >
               Abrir WhatsApp
             </a>
-            <button
-              type="button"
-              onClick={() => studentInsightMutation.mutate(student.id)}
-              className="rounded-full bg-primary-500 px-4 py-2 font-semibold text-white hover:bg-primary-500/90"
-            >
-              Gerar insight do aluno
-            </button>
-            {familyQuery.data && (
-              <button
-                type="button"
-                onClick={() => familyInsightMutation.mutate(familyQuery.data.id)}
-                className="rounded-full bg-warning-500 px-4 py-2 font-semibold text-neutral-900 hover:bg-warning-500/90"
-              >
-                Gerar insight da família
-              </button>
-            )}
           </div>
         </section>
       )}
@@ -212,12 +222,8 @@ const StudentDetails = () => {
       )}
 
       <div className="grid gap-4 md:grid-cols-2">
-        {studentInsightMutation.data && (
-          <InsightCard insight={studentInsightMutation.data} />
-        )}
-        {familyInsightMutation.data && (
-          <InsightCard insight={familyInsightMutation.data} />
-        )}
+        {studentInsight && <InsightCard insight={studentInsight} />}
+        {familyInsight && <InsightCard insight={familyInsight} />}
       </div>
 
       {assignment && (

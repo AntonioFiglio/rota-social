@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import CasesTable from "../components/CasesTable";
 import CaseTimeline from "../components/CaseTimeline";
 import { useCasesStore } from "../store/useCases";
+import { useStudentName, useStudentNames } from "../store/useStudentDirectory";
 
 const Cases = () => {
   const cases = useCasesStore((state) => Object.values(state.cases));
@@ -12,7 +13,19 @@ const Cases = () => {
   const [selectedCaseId, setSelectedCaseId] = useState<string | undefined>();
   const navigate = useNavigate();
 
+  const activeCases = useMemo(
+    () => cases.filter((item) => item.status !== "concluido"),
+    [cases],
+  );
+
   const selectedCase = cases.find((item) => item.id === selectedCaseId);
+  const caseStudentIds = useMemo(
+    () => activeCases.map((item) => item.studentId),
+    [activeCases],
+  );
+
+  const studentNames = useStudentNames(caseStudentIds);
+  const selectedStudentName = useStudentName(selectedCase?.studentId);
 
   return (
     <div className="flex flex-col gap-6 pb-24">
@@ -27,14 +40,22 @@ const Cases = () => {
       </header>
 
       <CasesTable
-        cases={cases}
+        cases={activeCases}
+        studentNames={studentNames}
         onInspect={(caseItem) => setSelectedCaseId(caseItem.id)}
         onClose={(caseItem) => {
           closeCase(caseItem.id, "Acompanhamento concluído.");
+          if (selectedCaseId === caseItem.id) {
+            setSelectedCaseId(undefined);
+          }
         }}
         onStatusChange={(caseItem, status) => {
           updateStatus(caseItem.id, status);
+          if (status === "concluido" && selectedCaseId === caseItem.id) {
+            setSelectedCaseId(undefined);
+          }
         }}
+        onStudentClick={(studentId) => navigate(`/students/${studentId}`)}
       />
 
       <div className="rounded-xl border border-neutral-200 bg-white p-4 text-sm text-neutral-600">
@@ -54,6 +75,7 @@ const Cases = () => {
 
       <CaseTimeline
         caseItem={selectedCase}
+        studentLabel={selectedStudentName}
         onClose={() => setSelectedCaseId(undefined)}
       />
     </div>

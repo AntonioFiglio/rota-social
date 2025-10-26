@@ -5,6 +5,12 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Dict, List, Set, Tuple
 
+from ..constants import (
+    ELIGIBILITY_BAIXA_RENDA,
+    ELIGIBILITY_FAMILIA_MONOPARENTAL,
+    ELIGIBILITY_NECESSIDADE_MOBILIDADE,
+    ELIGIBILITY_RESPONSAVEL_IDOSO,
+)
 from ..models import (
     ExternalServiceFootprint,
     ExternalServiceItem,
@@ -39,53 +45,8 @@ from ..storage import (
     upsert_service_cache,
     upsert_student,
 )
+from ..utils.names import generate_guardian_name, generate_student_name
 
-
-STUDENT_NAMES = [
-    "Alex",
-    "Bianca",
-    "Caio",
-    "Daniela",
-    "Eduarda",
-    "Felipe",
-    "Gabriela",
-    "Henrique",
-    "Isabela",
-    "João",
-    "Karina",
-    "Leonardo",
-    "Marina",
-    "Natan",
-    "Olivia",
-    "Paulo",
-    "Raissa",
-    "Sofia",
-    "Tiago",
-    "Vitória",
-]
-
-GUARDIAN_NAMES = [
-    "Ana",
-    "Bruno",
-    "Claudia",
-    "Diego",
-    "Eva",
-    "Fernando",
-    "Gisele",
-    "Heloisa",
-    "Igor",
-    "Janaina",
-    "Kleber",
-    "Larissa",
-    "Marcelo",
-    "Natalia",
-    "Otavio",
-    "Patricia",
-    "Renato",
-    "Silvia",
-    "Talita",
-    "Valter",
-]
 
 ZONE_META = {
     "Sao Paulo": {"city": "São Paulo", "state": "SP", "postal_code": "01000-000"},
@@ -119,8 +80,9 @@ def _base_coordinates(zone: str, index: int, lat: float, lon: float) -> Tuple[fl
 def _build_person(
     *,
     person_id: str,
-    name: str,
+    full_name: str,
     preferred: str,
+    gender: str,
     zone: str,
     is_guardian: bool,
     index: int,
@@ -133,7 +95,7 @@ def _build_person(
     document_type = "RG" if is_guardian else "RM"
     document_number = f"{zone[:2].upper()}-{person_id[1:]}"
     contacts = {
-        "phone": f"+55 99 9{index:04d}-0000",
+        "phone": f"+55 99 9{(index + 1000):04d}-0000",
         "email": f"{person_id.lower()}@example.com",
         "preferred_channel": "whatsapp" if index % 2 == 0 else "telefone",
     }
@@ -145,11 +107,11 @@ def _build_person(
     tags = ["responsavel", "sync_mock"] if is_guardian else ["student", "sync_mock"]
     return PersonProfile(
         id=person_id,
-        name=f"{name} {zone}",
+        name=full_name,
         preferred_name=preferred,
         document={"type": document_type, "number": document_number},
         birthdate="1965-05-10" if is_guardian else "2012-08-15",
-        gender="female" if name.endswith("a") else "male",
+        gender=gender,
         profession="trabalhador autônomo" if is_guardian else "estudante",
         address={
             "street": street,
@@ -238,9 +200,13 @@ def _compose_service_package(family_id: str, zone: str, timestamp: str) -> Tuple
         ],
     )
 
-    eligibility = ["low_income"]
+    eligibility = {ELIGIBILITY_BAIXA_RENDA}
+    if seed % 5 == 0:
+        eligibility.add(ELIGIBILITY_RESPONSAVEL_IDOSO)
+    if seed % 3 == 0:
+        eligibility.add(ELIGIBILITY_FAMILIA_MONOPARENTAL)
     if seed % 7 == 0:
-        eligibility.append("mobilidade")
+        eligibility.add(ELIGIBILITY_NECESSIDADE_MOBILIDADE)
     warm_notes = f"Perfil familiar {family_id} enriquecido com indicadores simulados para {zone}."
     confidence = round(min(0.99, 0.8 + (seed % 15) / 100), 2)
     inputs = ["SED", "SUS", "CadÚnico", "Bolsa Família"]
@@ -262,7 +228,15 @@ def _compose_service_package(family_id: str, zone: str, timestamp: str) -> Tuple
             },
         ),
     ]
-    return services, eligibility, warm_notes, confidence, inputs, explanations, status_payloads
+    return (
+        services,
+        sorted(eligibility),
+        warm_notes,
+        confidence,
+        inputs,
+        explanations,
+        status_payloads,
+    )
 
 
 def _upsert_services_cache(
@@ -350,10 +324,12 @@ def sync_zone_students(zone: str) -> Dict[str, object]:
     for offset in range(needed):
         base_index = len(existing_zone_students) + len(added_students) + offset
         guardian_id = _reserve_id("P", person_ids)
+        guardian_name, guardian_preferred, guardian_gender = generate_guardian_name(base_index + 1)
         guardian = _build_person(
             person_id=guardian_id,
-            name=GUARDIAN_NAMES[base_index % len(GUARDIAN_NAMES)],
-            preferred=GUARDIAN_NAMES[base_index % len(GUARDIAN_NAMES)],
+            full_name=guardian_name,
+            preferred=guardian_preferred,
+            gender=guardian_gender,
             zone=canonical_zone,
             is_guardian=True,
             index=base_index,
@@ -363,10 +339,12 @@ def sync_zone_students(zone: str) -> Dict[str, object]:
         upsert_person(guardian)
 
         student_person_id = _reserve_id("P", person_ids)
+        student_name, student_preferred, student_gender = generate_student_name(base_index + 1)
         student_person = _build_person(
             person_id=student_person_id,
-            name=STUDENT_NAMES[base_index % len(STUDENT_NAMES)],
-            preferred=STUDENT_NAMES[base_index % len(STUDENT_NAMES)],
+            full_name=student_name,
+            preferred=student_preferred,
+            gender=student_gender,
             zone=canonical_zone,
             is_guardian=False,
             index=base_index,

@@ -1,12 +1,15 @@
 import dayjs from "dayjs";
 
 import type { CaseItem, CaseStatus } from "../store/useCases";
+import { STUDENT_NAME_PLACEHOLDER } from "../store/useStudentDirectory";
 
 type CasesTableProps = {
   cases: CaseItem[];
+  studentNames?: Record<string, string>;
   onInspect: (caseItem: CaseItem) => void;
   onClose: (caseItem: CaseItem) => void;
   onStatusChange: (caseItem: CaseItem, status: CaseStatus) => void;
+  onStudentClick: (studentId: string) => void;
 };
 
 const statusLabels: Record<CaseStatus, string> = {
@@ -19,9 +22,11 @@ const statusLabels: Record<CaseStatus, string> = {
 
 const CasesTable = ({
   cases,
+  studentNames,
   onInspect,
   onClose,
   onStatusChange,
+  onStudentClick,
 }: CasesTableProps) => {
   return (
     <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm">
@@ -50,7 +55,14 @@ const CasesTable = ({
             cases.map((caseItem) => (
               <tr key={caseItem.id} className="hover:bg-neutral-50">
                 <td className="px-4 py-3 text-neutral-900">
-                  {caseItem.studentId}
+                  <button
+                    type="button"
+                    onClick={() => onStudentClick(caseItem.studentId)}
+                    className="rounded-full px-2 py-1 text-left font-semibold text-primary-600 transition hover:bg-primary-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                  >
+                    {studentNames?.[caseItem.studentId] ??
+                      STUDENT_NAME_PLACEHOLDER}
+                  </button>
                 </td>
                 <td className="px-4 py-3">
                   <select

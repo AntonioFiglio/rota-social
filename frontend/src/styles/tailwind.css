@@ -6,6 +6,12 @@
   color-scheme: light;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body {
   @apply bg-neutral-100 text-neutral-900;
   font-feature-settings: "liga";

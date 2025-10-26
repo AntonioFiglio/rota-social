@@ -73,7 +73,7 @@ export const buildSuggestions = ({
     const hasElderlyGuardian = family?.household?.some(
       (member) =>
         member.role === "guardian" &&
-        family.eligibility_signals?.includes("elderly_guardian"),
+        family.eligibility_signals?.includes("responsável idoso"),
     );
 
     if (wheelchair && hasElderlyGuardian) {
@@ -94,7 +94,7 @@ export const buildSuggestions = ({
       tags.add("frequencia");
     }
 
-    const lowIncome = family?.eligibility_signals?.includes("low_income");
+    const lowIncome = family?.eligibility_signals?.includes("baixa renda");
     const cadUnicoRegistered =
       family?.external_services?.cad_unico?.registered ?? false;
     if (lowIncome && !cadUnicoRegistered) {

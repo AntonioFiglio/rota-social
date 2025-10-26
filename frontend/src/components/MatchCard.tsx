@@ -14,6 +14,7 @@ type MatchCardInsight = {
 
 type MatchCardProps = {
   student: StudentProfile;
+  studentName: string;
   family?: FamilyProfile;
   suggestion: SuggestionItem;
   insight?: MatchCardInsight;
@@ -24,7 +25,10 @@ type MatchCardProps = {
   onSeeMore: () => void;
 };
 
-const severityStyles: Record<SuggestionItem["severity"], { bg: string; text: string; label: string }> = {
+const severityStyles: Record<
+  SuggestionItem["severity"],
+  { bg: string; text: string; label: string }
+> = {
   high: {
     bg: "bg-warning-500/20",
     text: "text-warning-700",
@@ -42,7 +46,16 @@ const severityStyles: Record<SuggestionItem["severity"], { bg: string; text: str
   },
 };
 
-const getInitials = (studentId: string) => studentId.slice(0, 2).toUpperCase();
+const getInitials = (value: string) => {
+  const parts = value
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2);
+  if (parts.length === 0) {
+    return value.slice(0, 2).toUpperCase();
+  }
+  return parts.map((part) => part[0]?.toUpperCase() ?? "").join("");
+};
 
 const getTimeEstimate = (score: number) => {
   if (score >= 60) return "Tempo estimado: contato prioritário (15-30 min).";
@@ -52,6 +65,7 @@ const getTimeEstimate = (score: number) => {
 
 const MatchCardComponent = ({
   student,
+  studentName,
   family,
   suggestion,
   insight,
@@ -89,10 +103,12 @@ const MatchCardComponent = ({
     <article className="w-full max-w-sm rounded-2xl bg-white p-4 text-neutral-900 shadow-xl">
       <header className="flex items-center gap-3">
         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-500/10 text-sm font-bold text-primary-500">
-          {getInitials(student.id)}
+          {getInitials(studentName)}
         </div>
         <div className="flex-1 text-left">
-          <h2 className="text-lg font-semibold text-neutral-900">{student.id}</h2>
+          <h2 className="text-lg font-semibold text-neutral-900">
+            {studentName}
+          </h2>
           <p className="text-xs text-neutral-600">
             {student.school.school_name} • {student.zone} •{" "}
             {distanceKm != null

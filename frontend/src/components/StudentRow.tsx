@@ -1,4 +1,5 @@
 import type { StudentProfile } from "../types/models";
+import { useStudentName } from "../store/useStudentDirectory";
 
 type StudentRowProps = {
   student: StudentProfile;
@@ -15,11 +16,13 @@ const StudentRow = ({
   onAccept,
   disabled,
 }: StudentRowProps) => {
+  const studentName = useStudentName(student.id);
+
   return (
     <div className="flex items-center justify-between gap-4 rounded-xl border border-neutral-200 bg-white p-4 shadow-sm transition hover:border-primary-500 hover:shadow-md">
       <div>
         <h3 className="text-sm font-semibold text-neutral-900">
-          {student.id}
+          {studentName}
         </h3>
         <p className="text-xs text-neutral-600">
           Escola {student.school.school_name} — turma {student.school.classroom} •{" "}

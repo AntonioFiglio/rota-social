@@ -1,6 +1,7 @@
 import clsx from "clsx";
 
 import type { SuggestionItem } from "../domain/suggestions";
+import { useStudentName } from "../store/useStudentDirectory";
 
 type SuggestionCardProps = {
   suggestion: SuggestionItem;
@@ -23,12 +24,14 @@ const SuggestionCard = ({
   onInsight,
   disabled,
 }: SuggestionCardProps) => {
+  const studentName = useStudentName(suggestion.studentId);
+
   return (
     <article className="flex flex-col gap-3 rounded-xl border border-neutral-200 bg-white p-4 shadow-sm transition hover:shadow-md focus-within:ring-2 focus-within:ring-primary-500 focus-within:ring-offset-2">
       <div className="flex items-start justify-between gap-3">
         <div>
           <h4 className="text-lg font-semibold text-neutral-900">
-            {suggestion.studentId}
+            {studentName}
           </h4>
           <p className="text-sm text-neutral-600">{suggestion.description}</p>
         </div>
