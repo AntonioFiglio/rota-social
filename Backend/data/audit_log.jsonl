@@ -144,3 +144,11 @@
 {"timestamp": "2025-10-26T13:59:34+00:00", "action": "insight_student", "payload": {"student_id": "S0991", "source": "mock", "model": "none"}}
 {"timestamp": "2025-10-26T13:59:34+00:00", "action": "insight_student", "payload": {"student_id": "S1175", "source": "mock", "model": "none"}}
 {"timestamp": "2025-10-26T14:00:55+00:00", "action": "insight_student", "payload": {"student_id": "S0807", "source": "mock", "model": "none"}}
+{"timestamp": "2025-10-26T14:14:40+00:00", "action": "insight_student", "payload": {"student_id": "S0347", "source": "mock", "model": "none"}}
+{"timestamp": "2025-10-26T14:14:40+00:00", "action": "insight_student", "payload": {"student_id": "S2187", "source": "mock", "model": "none"}}
+{"timestamp": "2025-10-26T14:14:40+00:00", "action": "insight_student", "payload": {"student_id": "S0071", "source": "mock", "model": "none"}}
+{"timestamp": "2025-10-26T14:14:40+00:00", "action": "insight_student", "payload": {"student_id": "S0140", "source": "mock", "model": "none"}}
+{"timestamp": "2025-10-26T14:14:41+00:00", "action": "insight_student", "payload": {"student_id": "S0163", "source": "mock", "model": "none"}}
+{"timestamp": "2025-10-26T14:14:41+00:00", "action": "insight_student", "payload": {"student_id": "S0255", "source": "mock", "model": "none"}}
+{"timestamp": "2025-10-26T14:14:41+00:00", "action": "insight_student", "payload": {"student_id": "S0807", "source": "mock", "model": "none"}}
+{"timestamp": "2025-10-26T14:14:41+00:00", "action": "insight_student", "payload": {"student_id": "S0991", "source": "mock", "model": "none"}}

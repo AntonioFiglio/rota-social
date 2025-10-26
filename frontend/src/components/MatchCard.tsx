@@ -100,7 +100,7 @@ const MatchCardComponent = ({
     : undefined;
 
   return (
-    <article className="w-full max-w-sm rounded-2xl bg-white p-4 text-neutral-900 shadow-xl">
+    <article className="group w-full max-w-sm rounded-2xl bg-white p-4 text-neutral-900 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
       <header className="flex items-center gap-3">
         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-500/10 text-sm font-bold text-primary-500">
           {getInitials(studentName)}
